@@ -3,7 +3,7 @@ A simple and easy to use API to integrate [EarthView with Google](http://earthvi
 
 ##Showcase
 ###Screenshot
-todo
+![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
 ###Demo Application
 You can find a simple demo application in the `app/` folder. This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
 
