@@ -5,7 +5,11 @@ A simple and easy to use API to integrate [EarthView with Google](http://earthvi
 ###Screenshot
 ![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
 ###Demo Application
-You can find a simple demo application in the `app/` folder. This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
+You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/app-debug.apk). This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
+
+##Getting Started
+Include the library into your project by adding the following line to your ```build.gradle```:
+```compile 'com.pddstudio:earthview-android:1.0.0'```
 
 ##Usage
  - Implement either `SingleEarthViewCallback` (for a single EarthView) or `EarthViewCallback` (for multiple EarthViews) into your Activity, Adapter or any other class where you want to load the EarthView's.
