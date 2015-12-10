@@ -1,0 +1,32 @@
+apply plugin: 'com.android.library'
+apply from: 'maven-push.gradle'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        minSdkVersion 17
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    //gson for json parsing
+    compile 'com.google.code.gson:gson:2.5'
+    compile 'org.apache.directory.studio:org.apache.commons.io:2.4'
+    //for wallpapers
+    compile 'com.squareup.okhttp:okhttp:2.6.0'
+    compile 'com.squareup.okhttp:okhttp-urlconnection:2.6.0'
+}

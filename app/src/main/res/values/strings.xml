@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">EarthViewDemo</string>
+    <string name="action_settings">Settings</string>
+    <string name="load_walls">Click to load EarthView Images</string>
+</resources>
