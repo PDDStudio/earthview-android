@@ -7,8 +7,13 @@ A simple and easy to use API to integrate [EarthView with Google](http://earthvi
 ##Showcase
 ###Screenshot
 ![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
-###Demo Application
-You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk). This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
+###Simple Demo Application
+You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk).
+###Advanced Demo Application (Beta)
+To showcase the different possibilities of this library I've created a demo 'Wallpaper Application'.
+You can find the source for this application in the `ps-app/` folder.
+
+![https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png)
 
 ##Getting Started
 Include the library into your project by adding the following line to your ```build.gradle```:
