@@ -448,10 +448,6 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     public void onCancelConfirmed() {
         if(earthView != null) {
             earthView.cancelAllRunningTasks();
-            Toast.makeText(DemoActivity.this, "items: " + earthViewAdapter.getItemCount(), Toast.LENGTH_SHORT).show();
-            earthViewAdapter = new EarthViewAdapter(null, this);
-            recyclerView.setAdapter(earthViewAdapter);
-            earthView.getAllEarthWallpapers(this);
         }
         if(recyclerView != null) recyclerView.removeOnScrollListener(scrollListener);
         if(footerLayout != null) footerLayout.setVisibility(View.GONE);

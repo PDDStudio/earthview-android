@@ -12,8 +12,9 @@ You can find a simple demo application in the `app/` folder which you can also d
 ###Advanced Demo Application (Beta)
 To showcase the different possibilities of this library I've created a demo 'Wallpaper Application'.
 You can find the source for this application in the `ps-app/` folder.
+In case you want to install the Application, feel free to do so! **It's on Google Play™**
 
-![https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer](https://play.google.com/intl/en_us/badges/images/generic/en-play-badge-border.png)
+[![](https://github.com/PDDStudio/earthview-android/blob/master/preview/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer)
 
 ##Getting Started
 Include the library into your project by adding the following line to your ```build.gradle```:
@@ -143,8 +144,10 @@ You can find more information in the EarthView JavaDoc.
 - [Apache Commons IO](https://commons.apache.org/proper/commons-io/)
 - [OkHttp](http://square.github.io/okhttp/)
 
-##Dependencies (Demo Application)
+##Dependencies (Simple Demo Application)
 - [Picasso](http://square.github.io/picasso/)
+
+**Note:** *Dependencies for the Advanced Demo can be found inside the application*
 
 ##About & Contact
 - In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
