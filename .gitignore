@@ -8,5 +8,5 @@
 .navigation
 /build
 /captures
-/ps-non-git
 /ps-app/*.apk
+/ps-app/build
