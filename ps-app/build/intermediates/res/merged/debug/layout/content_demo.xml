@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 - Patrick J - ps-app
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pddstudio.wallpaperrecyclerdemo.DemoActivity"
+    tools:showIn="@layout/activity_demo">
+
+    <LinearLayout
+        android:id="@+id/loading_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:elevation="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/info_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="@string/info_text_title"/>
+
+        <TextView
+            android:id="@+id/info_text_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="italic"
+            android:textColor="@color/colorSubTitleWhite"
+            android:text="@string/info_text_content"/>
+
+        <Button
+            android:id="@+id/info_start_loading_bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/info_load_walls_btn_text"
+            android:backgroundTint="@color/colorAccent"
+            android:textColorHighlight="@color/colorPrimary"
+            android:textColor="@color/md_white_1000"/>
+
+        <ProgressBar
+            android:id="@+id/loading_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminate="true"
+            android:layout_gravity="center"
+            style="?android:progressBarStyle"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/earth_wall_recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.arlib.floatingsearchview.FloatingSearchView
+        android:id="@+id/wall_search_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:floatingSearch_searchBarMarginLeft="8dp"
+        app:floatingSearch_searchBarMarginRight="8dp"
+        app:floatingSearch_searchBarMarginTop="8dp"
+        app:floatingSearch_leftActionMode="showSearch"
+        app:floatingSearch_dismissOnOutsideTouch="true"
+        app:floatingSearch_showMenuAction="false"
+        app:floatingSearch_showSearchKey="true"/>
+
+    <!-- quick return footer -->
+
+    <FrameLayout
+        android:id="@+id/loading_footer_bar_frame"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:fitsSystemWindows="true"
+        android:background="#ff171717">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/async_progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:indeterminate="true"
+                android:paddingStart="2dp"
+                android:paddingEnd="2dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"/>
+
+            <TextView
+                android:id="@+id/progress_text"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                tools:text="Title"
+                android:minHeight="50dp"
+                android:gravity="center_vertical" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/footer_cancel_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="?android:attr/buttonBarButtonStyle"
+            android:background="?android:attr/selectableItemBackgroundBorderless"
+            android:text="@string/cancel"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center_vertical|end"/>
+
+    </FrameLayout>
+
+    <!-- error header -->
+    <LinearLayout
+        android:id="@+id/no_connection_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/rounded_shape"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="16dp"
+        android:padding="14dp"
+        android:layout_alignParentTop="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/info_no_wifi_connection_title"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/md_white_1000"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/info_no_wifi_connection_subtitle" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

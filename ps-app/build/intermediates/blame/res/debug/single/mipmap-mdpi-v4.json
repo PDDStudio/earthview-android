@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/ic_launcher.png",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/mipmap-mdpi-v4/earthviewicon.png",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/mipmap-mdpi/earthviewicon.png"
+    }
+]

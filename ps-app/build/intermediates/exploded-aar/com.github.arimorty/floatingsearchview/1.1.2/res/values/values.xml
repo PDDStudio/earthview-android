@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/C:/Users/ari/Desktop/Career/android_development/projects/personal/libs/FloatingSearchViewDemo/library/src/main/res/values/colors.xml -->
+    <eat-comment/>
+    <color name="background">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="clear_btn_color">#787878</color>
+    <color name="dark_gray">#787878</color>
+    <color name="divider">#F0F0F0</color>
+    <color name="divider_color">#F0F0F0</color>
+    <color name="gray_active_icon">#787878</color>
+    <color name="hint_color">#808080</color>
+    <color name="left_action_icon">#787878</color>
+    <color name="light_gray">#e9e9e9</color>
+    <color name="light_gray_inactive_icon">#BEBEBE</color>
+    <color name="menu_icon_color">#787878</color>
+    <color name="overflow_icon_color">#787878</color>
+    <color name="pressed_color">#E7E7E7</color>
+    <color name="search_input_background_color">#FFFFFF</color>
+    <color name="semi_transparent">#33000000</color>
+    <color name="suggestion_item_pressed_color">#bbbbbb</color>
+    <color name="suggestion_item_regular_color">#FAFAFA</color>
+    <color name="suggestion_list_color">#FFFFFF</color>
+    <color name="transparent">#00000000</color>
+    <declare-styleable name="FloatingSearchView"><attr format="dimension" name="floatingSearch_searchBarWidth"/><attr format="dimension" name="floatingSearch_searchBarMarginTop"/><attr format="dimension" name="floatingSearch_searchBarMarginLeft"/><attr format="dimension" name="floatingSearch_searchBarMarginRight"/><attr format="dimension" name="floatingSearch_searchSuggestionTextSize"/><attr format="boolean" name="floatingSearch_showMenuAction"/><attr name="floatingSearch_leftActionMode"><enum name="showHamburger" value="1"/><enum name="showSearch" value="2"/><enum name="showHome" value="3"/><enum name="noLeftAction" value="4"/></attr><attr format="boolean" name="floatingSearch_showVoiceInput"/><attr format="boolean" name="floatingSearch_showSearchKey"/><attr format="string" name="floatingSearch_voiceRecHint"/><attr format="string" name="floatingSearch_searchHint"/><attr format="boolean" name="floatingSearch_dismissOnOutsideTouch"/><attr format="boolean" name="floatingSearch_hideOverflowMenuWhenFocused"/><attr format="boolean" name="floatingSearch_showOverFlowMenu"/><attr format="reference" name="floatingSearch_menu"/><attr format="color" name="floatingSearch_leftActionColor"/><attr format="color" name="floatingSearch_menuItemIconColor"/><attr format="color" name="floatingSearch_actionMenuOverflowColor"/><attr format="color" name="floatingSearch_clearBtnColor"/><attr format="color" name="floatingSearch_backgroundColor"/><attr format="color" name="floatingSearch_dividerColor"/><attr format="color" name="floatingSearch_viewTextColor"/><attr format="color" name="floatingSearch_hintTextColor"/><attr format="color" name="floatingSearch_suggestionRightIconColor"/></declare-styleable>
+    <!-- From: file:/C:/Users/ari/Desktop/Career/android_development/projects/personal/libs/FloatingSearchViewDemo/library/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="search_bar_filter_section_marin_left">64dp</dimen>
+    <dimen name="search_bar_height">48dp</dimen>
+    <dimen name="search_bar_left_icon_left_margin">4dp</dimen>
+    <dimen name="search_bar_right_icon_right_margin">4dp</dimen>
+    <dimen name="search_bar_search_input_left_margin">20dp</dimen>
+    <dimen name="search_bar_search_input_right_margin">68dp</dimen>
+    <dimen name="search_bar_text_size">16dp</dimen>
+    <dimen name="square_button_icon_size">24dp</dimen>
+    <dimen name="square_button_padding">12dp</dimen>
+    <dimen name="square_button_size">48dp</dimen>
+    <dimen name="suggestion_body_text_size">18sp</dimen>
+    <dimen name="text_content_margin">16dp</dimen>
+</resources>

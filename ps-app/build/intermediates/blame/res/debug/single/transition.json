@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/transition/change_image_transform.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/transition/change_image_transform.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/transition/fade_activity.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/transition/fade_activity.xml"
+    }
+]

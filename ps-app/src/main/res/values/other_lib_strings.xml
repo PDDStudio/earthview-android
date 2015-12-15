@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 - Patrick J - ps-app
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <!-- other libraries not included by default
+         don't edit this lines for providing proper
+         copyright !!
+         -->
+
+    <!-- floatingactionbutton -->
+    <string name="define_ClansFloatingActionButton"></string>
+    <string name="library_ClansFloatingActionButton_author">Dmytro Tarianyk</string>
+    <string name="library_ClansFloatingActionButton_authorWebsite">https://github.com/Clans</string>
+    <string name="library_ClansFloatingActionButton_libraryName">FloatingActionButton</string>
+    <string name="library_ClansFloatingActionButton_libraryDescription">Yet another implementation of Floating Action Button for Android with lots of features.</string>
+    <string name="library_ClansFloatingActionButton_libraryVersion">1.6.2</string>
+    <string name="library_ClansFloatingActionButton_libraryWebsite">https://github.com/Clans/FloatingActionButton</string>
+    <string name="library_ClansFloatingActionButton_licenseId">apache_2_0</string>
+    <string name="library_ClansFloatingActionButton_isOpenSource">true</string>
+    <string name="library_ClansFloatingActionButton_repositoryLink">https://github.com/Clans/FloatingActionButton</string>
+
+    <!-- floatingsearchview -->
+    <string name="define_FloatingSearchView"></string>
+    <string name="library_FloatingSearchView_author">Arlib</string>
+    <string name="library_FloatingSearchView_authorWebsite">https://github.com/arimorty</string>
+    <string name="library_FloatingSearchView_libraryName">Floating Search View</string>
+    <string name="library_FloatingSearchView_libraryDescription">An implementation of a floating search box with search suggestions.</string>
+    <string name="library_FloatingSearchView_libraryVersion">1.1.2</string>
+    <string name="library_FloatingSearchView_libraryWebsite">https://github.com/arimorty/floatingsearchview</string>
+    <string name="library_FloatingSearchView_licenseId">apache_2_0</string>
+    <string name="library_FloatingSearchView_isOpenSource">true</string>
+    <string name="library_FloatingSearchView_repositoryLink">https://github.com/arimorty/floatingsearchview</string>
+
+    <!-- Paper -->
+    <string name="define_Paper"></string>
+    <string name="library_Paper_author">Aleksey Masny</string>
+    <string name="library_Paper_authorWebsite">https://github.com/pilgr</string>
+    <string name="library_Paper_libraryName">Paper</string>
+    <string name="library_Paper_libraryDescription">Paper is a fast NoSQL data storage for Android that lets you save/restore Java objects by using efficient Kryo serialization and handling data structure changes automatically.</string>
+    <string name="library_Paper_libraryVersion">1.1</string>
+    <string name="library_Paper_libraryWebsite">https://github.com/pilgr/Paper</string>
+    <string name="library_Paper_licenseId">apache_2_0</string>
+    <string name="library_Paper_isOpenSource">true</string>
+    <string name="library_Paper_repositoryLink">https://github.com/pilgr/Paper</string>
+
+    <!-- QuickReturn -->
+    <string name="define_QuickReturn"></string>
+    <string name="library_QuickReturn_author">Etienne Lawlor</string>
+    <string name="library_QuickReturn_authorWebsite">https://medium.com/@etiennelawlor</string>
+    <string name="library_QuickReturn_libraryName">QuickReturn</string>
+    <string name="library_QuickReturn_libraryDescription">QuickReturn is a library which showcases the QuickReturn UI Pattern. The QuickReturn UI Pattern reveals or hides a header or footer as content is scrolled up or down.</string>
+    <string name="library_QuickReturn_libraryVersion">0.0.3</string>
+    <string name="library_QuickReturn_libraryWebsite">https://github.com/lawloretienne/QuickReturn</string>
+    <string name="library_QuickReturn_licenseId">apache_2_0</string>
+    <string name="library_QuickReturn_isOpenSource">true</string>
+    <string name="library_QuickReturn_repositoryLink">https://github.com/lawloretienne/QuickReturn</string>
+
+</resources>

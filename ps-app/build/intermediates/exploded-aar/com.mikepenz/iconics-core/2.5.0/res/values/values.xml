@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="Iconics"><attr format="string" name="ico_icon"/><attr format="color|reference" name="ico_color"/><attr format="dimension|reference" name="ico_size"/><attr format="dimension|reference" name="ico_offset_x"/><attr format="dimension|reference" name="ico_offset_y"/><attr format="dimension|reference" name="ico_padding"/><attr format="color|reference" name="ico_contour_color"/><attr format="dimension|reference" name="ico_contour_width"/><attr format="color|reference" name="ico_background_color"/><attr format="dimension|reference" name="ico_corner_radius"/></declare-styleable>
+    <declare-styleable name="IconicsImageView"><attr format="string" name="iiv_icon"/><attr format="color|reference" name="iiv_color"/><attr format="dimension|reference" name="iiv_size"/><attr format="dimension|reference" name="iiv_padding"/><attr format="color|reference" name="iiv_contour_color"/><attr format="dimension|reference" name="iiv_contour_width"/><attr format="color|reference" name="iiv_background_color"/><attr format="dimension|reference" name="iiv_corner_radius"/></declare-styleable>
+    <item name="iconics_tag_id" type="id"/>
+    <string name="app_name">library</string>
+    <string name="define_AndroidIconics">year;owner</string>
+    <string name="library_AndroidIconics_author">Mike Penz</string>
+    <string name="library_AndroidIconics_authorWebsite">http://mikepenz.com/</string>
+    <string name="library_AndroidIconics_isOpenSource">true</string>
+    <string name="library_AndroidIconics_libraryDescription">
+        
+        This library allows you to include vector icons everywhere in your project. No limits are given. Scale with no limit, use any Color at any time, provide a contour, and many additional customizations
+        
+    </string>
+    <string name="library_AndroidIconics_libraryName">Android-Iconics</string>
+    <string name="library_AndroidIconics_libraryVersion">2.5.0</string>
+    <string name="library_AndroidIconics_libraryWebsite">https://github.com/mikepenz/Android-Iconics</string>
+    <string name="library_AndroidIconics_licenseId">apache_2_0</string>
+    <string name="library_AndroidIconics_owner">Mike Penz</string>
+    <string name="library_AndroidIconics_repositoryLink">https://github.com/mikepenz/Android-Iconics</string>
+    <string name="library_AndroidIconics_year">2015</string>
+</resources>

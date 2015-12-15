@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 - Patrick J - ps-app
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<android.support.v4.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:layout_marginBottom="8dp"
+    android:background="@color/activityBackgroundColor"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.pddstudio.wallpaperrecyclerdemo.WallpaperActivity"
+    tools:showIn="@layout/activity_wallpaper">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:paddingStart="16dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="@string/details_content_header"
+            android:textColor="@color/colorPrimary"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_city_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="cmd-map-marker"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_city_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_city_title"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_location_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/itemDividerColor"
+            android:layout_marginStart="72dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_country_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="cmd-map"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_country_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_country_title"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_country_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/itemDividerColor"
+            android:layout_marginStart="72dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_coord_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="cmd-target"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_coord_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_coords_title"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_coords_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/itemDividerColor"
+            android:layout_marginStart="72dp"/>
+
+        <RelativeLayout
+            android:id="@+id/gmaps_nav_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_gmaps_link_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="cmd-launch"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_gmaps_link_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/open_in_google_maps"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_gmaps_link_icon_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginBottom="4dp"
+            android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+            android:text="@string/details_misc_header"
+            android:textColor="@color/colorPrimary" />
+
+        <RelativeLayout
+            android:id="@+id/details_attribution_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_attribution_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="faw-copyright"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_attribution_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_attribution_title"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_attribution_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/itemDividerColor"
+            android:layout_marginStart="72dp"/>
+
+        <RelativeLayout
+            android:id="@+id/share_link_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/icon_tile_item_height"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <ImageView
+                android:id="@+id/details_share_link_icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="16dp"
+                android:maxHeight="48dp"
+                android:maxWidth="48dp"
+                android:layout_centerVertical="true"
+                app:ico_color="@color/colorPrimary"
+                app:ico_icon="cmd-earth"
+                app:ico_size="24dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/details_share_link_icon"
+                android:layout_centerVertical="true"
+                android:paddingStart="32dp"
+                android:paddingEnd="16dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/details_share_link_title"
+                    android:textSize="@dimen/icon_tile_item_primaryTextSize"
+                    android:textColor="@color/detailsTextPrimary"
+                    android:singleLine="true"/>
+
+                <TextView
+                    android:id="@+id/details_share_link_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/icon_tile_item_secondaryTextSize"
+                    android:textColor="@color/detailsTextSecondary"
+                    android:ellipsize="marquee"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

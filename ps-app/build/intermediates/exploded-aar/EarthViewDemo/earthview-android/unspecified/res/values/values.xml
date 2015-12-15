@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">earthview-android</string>
+    <string name="define_EarthViewAndroid"/>
+    <string name="library_EarthViewAndroid_author">Patrick J</string>
+    <string name="library_EarthViewAndroid_authorWebsite">http://pddstudio.com/</string>
+    <string name="library_EarthViewAndroid_isOpenSource">true</string>
+    <string name="library_EarthViewAndroid_libraryDescription">A simple and easy to use API to integrate EarthView with Google into your android application.</string>
+    <string name="library_EarthViewAndroid_libraryName">EarthView for Android</string>
+    <string name="library_EarthViewAndroid_libraryVersion">1.0.0</string>
+    <string name="library_EarthViewAndroid_libraryWebsite">https://github.com/pddstudio/earthview-android/</string>
+    <string name="library_EarthViewAndroid_licenseId">apache_2_0</string>
+    <string name="library_EarthViewAndroid_repositoryLink">https://github.com/pddstudio/earthview-android/</string>
+</resources>

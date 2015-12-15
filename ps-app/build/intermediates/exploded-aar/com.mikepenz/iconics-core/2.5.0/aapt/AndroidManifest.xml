@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    package="com.mikepenz.iconics.core"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="250"
+    android:versionName="2.5.0" >
+
+    <uses-sdk
+        android:minSdkVersion="10"
+        android:targetSdkVersion="23" />
+
+</manifest>

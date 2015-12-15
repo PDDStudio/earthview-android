@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/layout-v14/md_stub_progress.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout-v14/md_stub_progress.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/layout-v14/md_stub_progress_indeterminate_horizontal.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout-v14/md_stub_progress_indeterminate_horizontal.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/layout-v14/md_stub_progress_indeterminate.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout-v14/md_stub_progress_indeterminate.xml"
+    }
+]

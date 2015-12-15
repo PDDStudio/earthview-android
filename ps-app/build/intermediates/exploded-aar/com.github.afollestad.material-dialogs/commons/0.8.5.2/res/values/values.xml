@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/home/jitpack/build/commons/src/main/res/values/dimens.xml -->
+    <eat-comment/>
+    <dimen name="md_colorchooser_circlesize">56dp</dimen>
+    <dimen name="md_preference_content_inset">16dp</dimen>
+    <dimen name="md_simpleitem_height">62dp</dimen>
+    <dimen name="md_simplelist_icon">40dp</dimen>
+    <dimen name="md_simplelist_icon_margin">16dp</dimen>
+    <dimen name="md_simplelist_textsize">18sp</dimen>
+    <!-- From: file:/home/jitpack/build/commons/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="md_back_label">Back</string>
+    <string name="md_cancel_label">Cancel</string>
+    <string name="md_choose_label">Choose</string>
+    <string name="md_custom_label">Custom</string>
+    <string name="md_done_label">Done</string>
+    <string name="md_error_label">Error</string>
+    <string name="md_presets_label">Presets</string>
+    <string name="md_storage_perm_error">Your app has not been granted the READ_EXTERNAL_STORAGE permission.</string>
+</resources>

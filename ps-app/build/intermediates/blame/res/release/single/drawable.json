@@ -1,0 +1,194 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_transparent.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_transparent.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/gray_circle.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/drawable/gray_circle.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_selector_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_selector_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_item_background_holo_light.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_light.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_btn_selector_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_btn_selector_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_item_selected_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_item_selected_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/design_fab_background.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_fab_background.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_cab_background_internal_bg.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_internal_bg.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_cab_background_top_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_cab_background_top_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/earthviewicon.png",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/drawable/earthviewicon.png"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_dialog_material_background_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_btn_selected.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_btn_selected.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_btn_default_mtrl_shape.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_default_mtrl_shape.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_badge.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_badge.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_switch_thumb_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_switch_thumb_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_dialog_material_background_light.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_dialog_material_background_light.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_btn_radio_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_radio_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_seekbar_thumb_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_thumb_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_tab_indicator_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_tab_indicator_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_text_cursor_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_text_cursor_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_textfield_search_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_textfield_search_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_shadow_top.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_shadow_top.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_shadow_right.9.png",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_shadow_right.9.png"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_list_selector_background_transition_holo_light.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/suggestion_item_background.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/drawable/suggestion_item_background.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_ratingbar_full_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_ratingbar_full_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_seekbar_track_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_seekbar_track_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/divider_background.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/drawable/divider_background.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_item_selected.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_item_selected.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_list_selector_holo_light.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_list_selector_holo_light.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/button_rect_normal.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/aboutlibraries/5.3.4/res/drawable/button_rect_normal.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_btn_selector.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_btn_selector.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_btn_borderless_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_borderless_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_btn_selected_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_btn_selected_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_circle_mask.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_circle_mask.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/design_snackbar_background.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/drawable/design_snackbar_background.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_spinner_textfield_background_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_spinner_textfield_background_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_btn_colored_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_colored_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_shadow_left.9.png",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_shadow_left.9.png"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/oval_btn_selector.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/drawable/oval_btn_selector.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/rounded_shape.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/drawable/rounded_shape.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/material_drawer_shadow_bottom.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/drawable/material_drawer_shadow_bottom.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_item_background_holo_dark.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_item_background_holo_dark.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_btn_check_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_btn_check_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/abc_edit_text_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/drawable/abc_edit_text_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/drawable/md_selector.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/drawable/md_selector.xml"
+    }
+]

@@ -1,0 +1,434 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_menu_item_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_mode_close_item_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_close_item_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/select_dialog_item_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/fragment_opensource.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/aboutlibraries/5.3.4/res/layout/fragment_opensource.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/activity_preferences.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/activity_preferences.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/select_dialog_multichoice_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_multichoice_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/activity_about.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/activity_about.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/earthview_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/earthview_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_screen_simple_overlay_action_mode.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple_overlay_action_mode.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_search_dropdown_item_icons_2line.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_dropdown_item_icons_2line.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_checkbox.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_checkbox.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_progress_indeterminate_horizontal.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_progress_indeterminate_horizontal.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_section.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_section.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_mini_profile.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_mini_profile.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/content_demo.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/content_demo.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_colorchooser_grid.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_stub_colorchooser_grid.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/search_suggestion_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/search_suggestion_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/support_simple_spinner_dropdown_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/support_simple_spinner_dropdown_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_media_cancel_action.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_cancel_action.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/listitem_opensource.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/aboutlibraries/5.3.4/res/layout/listitem_opensource.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_secondary.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_secondary.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_part_chronometer.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_chronometer.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_lines.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_lines.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/drawer_header.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/drawer_header.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_bar_view_list_nav_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_view_list_nav_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_media.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_media.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_primary.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_primary.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_menu.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/select_dialog_singlechoice_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/select_dialog_singlechoice_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_secondary_toggle.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_secondary_toggle.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/activity_demo.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/activity_demo.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/action_item_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/action_item_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_progress_indeterminate.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_progress_indeterminate.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_layout_tab_icon.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_icon.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/content_wallpaper.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/content_wallpaper.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_search_view.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_search_view.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_list.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_list.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_header.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_header.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_titleframe_lesspadding.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_titleframe_lesspadding.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_activity_chooser_view_list_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_activity_chooser_view_list_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/floating_search_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/floating_search_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_profile.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_profile.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_actionbuttons.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_actionbuttons.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_divider.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_divider.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_toggle.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_toggle.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_mode_bar.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_mode_bar.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_listitem_multichoice.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_listitem_multichoice.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_listitem.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_listitem.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_button_bar_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_button_bar_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/overflow_action_item_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/overflow_action_item_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_simplelist_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_simplelist_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_basic.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_basic.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_screen_toolbar.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_toolbar.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_alert_dialog_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_alert_dialog_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_menu_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_menu_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_part_time.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_part_time.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/search_suggestions_section.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/search_suggestions_section.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_expanded_menu_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_custom.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_custom.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_radio.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_radio.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_screen_simple.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_simple.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_bar_title_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_title_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/activity_wallpaper.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/activity_wallpaper.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_screen_content_include.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_screen_content_include.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_switch.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_switch.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_big_media_narrow.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media_narrow.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_icon.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_icon.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_item_header.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_header.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_preference_custom.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_preference_custom.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_container.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_container.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_layout_snackbar_include.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar_include.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_compact_header.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_compact_header.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/listheader_opensource.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/aboutlibraries/5.3.4/res/layout/listheader_opensource.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_bar_up_container.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_bar_up_container.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/materialize.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/layout/materialize.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_item_separator.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_separator.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_template_big_media.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_template_big_media.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_item.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_progress.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_progress.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_progress.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_progress.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_input.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_input.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_progress_indeterminate.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_progress_indeterminate.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/notification_media_action.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/notification_media_action.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_secondary_switch.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_secondary_switch.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_colorchooser_custom.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_stub_colorchooser_custom.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_progress_indeterminate_horizontal.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_dialog_progress_indeterminate_horizontal.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_inputpref.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_stub_inputpref.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_stub_titleframe.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_stub_titleframe.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_list_menu_item_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_list_menu_item_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_action_menu_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_action_menu_layout.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_profile_setting.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_profile_setting.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_select_dialog_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_select_dialog_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_listitem_singlechoice.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/core/0.8.5.2/res/layout/md_listitem_singlechoice.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_slider.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_slider.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_dialog_title_material.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_dialog_title_material.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_layout_tab_text.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_tab_text.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_menu_item_action_area.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_menu_item_action_area.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/search_query_section.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.arimorty/floatingsearchview/1.1.2/res/layout/search_query_section.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/content_about.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/layout/content_about.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/md_dialog_colorchooser.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.github.afollestad.material-dialogs/commons/0.8.5.2/res/layout/md_dialog_colorchooser.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_item_mini.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_item_mini.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_layout_snackbar.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_layout_snackbar.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/activity_opensource.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/aboutlibraries/5.3.4/res/layout/activity_opensource.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/design_navigation_item_subheader.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/res/layout/design_navigation_item_subheader.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/material_drawer_recycler_view.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialdrawer/4.5.6/res/layout/material_drawer_recycler_view.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/layout/abc_popup_menu_item_layout.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/res/layout/abc_popup_menu_item_layout.xml"
+    }
+]

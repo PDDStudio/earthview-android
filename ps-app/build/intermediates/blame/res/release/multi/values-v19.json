@@ -1,0 +1,152 @@
+[
+    {
+        "outputFile": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/release/values-v19/values-v19.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 51,
+                    "endOffset": 102
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 2,
+                        "startColumn": 4,
+                        "startOffset": 55,
+                        "endColumn": 51,
+                        "endOffset": 102
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 107,
+                    "endLine": 5,
+                    "endColumn": 12,
+                    "endOffset": 274
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endLine": 5,
+                        "endColumn": 12,
+                        "endOffset": 274
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 279,
+                    "endLine": 8,
+                    "endColumn": 12,
+                    "endOffset": 458
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 279,
+                        "endLine": 8,
+                        "endColumn": 12,
+                        "endOffset": 458
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 463,
+                    "endLine": 11,
+                    "endColumn": 12,
+                    "endOffset": 666
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 463,
+                        "endLine": 11,
+                        "endColumn": 12,
+                        "endOffset": 666
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 671,
+                    "endLine": 14,
+                    "endColumn": 12,
+                    "endOffset": 854
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 671,
+                        "endLine": 14,
+                        "endColumn": 12,
+                        "endOffset": 854
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 859,
+                    "endLine": 17,
+                    "endColumn": 12,
+                    "endOffset": 1018
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 859,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 1018
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 18,
+                    "startColumn": 4,
+                    "startOffset": 1023,
+                    "endLine": 20,
+                    "endColumn": 12,
+                    "endOffset": 1170
+                },
+                "from": {
+                    "file": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/exploded-aar/com.mikepenz/materialize/0.5.1/res/values-v19/values-v19.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 1023,
+                        "endLine": 20,
+                        "endColumn": 12,
+                        "endOffset": 1170
+                    }
+                }
+            }
+        ]
+    }
+]

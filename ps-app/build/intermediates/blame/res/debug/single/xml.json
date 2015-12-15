@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/xml/preferences.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/build/intermediates/res/merged/debug/xml/providers.xml",
+        "source": "/home/pddstudio/dev/android/github/EarthViewDemo/ps-app/src/main/res/xml/providers.xml"
+    }
+]

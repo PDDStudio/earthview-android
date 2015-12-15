@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="MaterialBaseTheme" parent="MaterialBaseBaseTheme">
+        <!--
+        <item name="android:dialogTheme">@style/MaterialBaseTheme.Dialog</item>
+        <item name="android:alertDialogTheme">@style/MaterialBaseTheme.AlertDialog</item>
+        -->
+    </style>
+    <style name="MaterialBaseTheme.AlertDialog" parent="MaterialBaseTheme.Dialog">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="MaterialBaseTheme.Dialog" parent="Theme.AppCompat.Dialog">
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+    </style>
+    <style name="MaterialBaseTheme.Light" parent="MaterialBaseBaseTheme.Light">
+        <!--
+        <item name="android:dialogTheme">@style/MaterialBaseTheme.Light.Dialog</item>
+        <item name="android:alertDialogTheme">@style/MaterialBaseTheme.Light.AlertDialog</item>
+        -->
+    </style>
+    <style name="MaterialBaseTheme.Light.AlertDialog" parent="MaterialBaseTheme.Light.Dialog">
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="MaterialBaseTheme.Light.DarkToolbar" parent="MaterialBaseBaseTheme.Light.DarkToolbar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+
+        <!--
+        <item name="android:dialogTheme">@style/MaterialBaseTheme.Light.Dialog</item>
+        <item name="android:alertDialogTheme">@style/MaterialBaseTheme.Light.AlertDialog</item>
+        -->
+    </style>
+    <style name="MaterialBaseTheme.Light.Dialog" parent="Theme.AppCompat.Light.Dialog">
+        <item name="colorPrimary">@color/materialize_primary</item>
+        <item name="colorPrimaryDark">@color/materialize_primary_dark</item>
+        <item name="colorAccent">@color/materialize_accent</item>
+    </style>
+    <style name="MaterialTheme.ActionBar" parent="MaterialTheme">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="MaterialTheme.Light.ActionBar" parent="MaterialTheme.Light">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+    <style name="MaterialTheme.Light.DarkToolbar.ActionBar" parent="MaterialTheme.Light.DarkToolbar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+</resources>

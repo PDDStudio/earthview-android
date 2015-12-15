@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+android:exitFadeDuration="@android:integer/config_shortAnimTime"
+android:color="?attr/colorControlHighlight" >
+
+<item android:id="@android:id/mask">
+    <shape android:shape="oval" >
+        <solid android:color="@color/black" />
+        <size
+            android:width="36dp"
+            android:height="36dp"/>
+    </shape>
+</item>
+
+</ripple><!-- From: file:/C:/Users/ari/Desktop/Career/android_development/projects/personal/libs/FloatingSearchViewDemo/library/src/main/res/drawable-v21/oval_btn_selector.xml -->

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
+  <info organisation="EarthViewDemo" module="ps-app" revision="unspecified" status="integration" publication="20151215122804">
+    <description/>
+  </info>
+  <configurations>
+    <conf name="_debugAndroidTestApk" visibility="private" description="## Internal use, do not manually configure ##" extends="androidTestApk,androidTestCompile"/>
+    <conf name="_debugAndroidTestCompile" visibility="private" description="## Internal use, do not manually configure ##" extends="androidTestCompile,androidTestProvided"/>
+    <conf name="_debugApk" visibility="private" description="## Internal use, do not manually configure ##" extends="apk,compile,debugApk,debugCompile"/>
+    <conf name="_debugCompile" visibility="private" description="## Internal use, do not manually configure ##" extends="compile,debugCompile,debugProvided,provided"/>
+    <conf name="_debugUnitTestApk" visibility="private" description="## Internal use, do not manually configure ##" extends="testApk,testCompile,testDebugApk,testDebugCompile"/>
+    <conf name="_debugUnitTestCompile" visibility="private" description="## Internal use, do not manually configure ##" extends="testCompile,testDebugCompile,testDebugProvided,testProvided"/>
+    <conf name="_releaseApk" visibility="private" description="## Internal use, do not manually configure ##" extends="apk,compile,releaseApk,releaseCompile"/>
+    <conf name="_releaseCompile" visibility="private" description="## Internal use, do not manually configure ##" extends="compile,provided,releaseCompile,releaseProvided"/>
+    <conf name="_releaseUnitTestApk" visibility="private" description="## Internal use, do not manually configure ##" extends="testApk,testCompile,testReleaseApk,testReleaseCompile"/>
+    <conf name="_releaseUnitTestCompile" visibility="private" description="## Internal use, do not manually configure ##" extends="testCompile,testProvided,testReleaseCompile,testReleaseProvided"/>
+    <conf name="androidJacocoAgent" visibility="private" description="The Jacoco agent to use to get coverage data."/>
+    <conf name="androidJacocoAnt" visibility="private" description="The Jacoco ant tasks to use to get execute Gradle tasks."/>
+    <conf name="androidTestApk" visibility="private" description="Classpath packaged with the compiled 'androidTest' classes."/>
+    <conf name="androidTestCompile" visibility="private" description="Classpath for compiling the androidTest sources."/>
+    <conf name="androidTestProvided" visibility="private" description="Classpath for only compiling the androidTest sources."/>
+    <conf name="androidTestWearApp" visibility="private" description="Link to a wear app to embed for object 'androidTest'."/>
+    <conf name="apk" visibility="private" description="Classpath packaged with the compiled 'main' classes."/>
+    <conf name="archives" visibility="public" description="Configuration for archive artifacts."/>
+    <conf name="compile" visibility="private" description="Classpath for compiling the main sources."/>
+    <conf name="debugApk" visibility="private" description="Classpath packaged with the compiled 'debug' classes."/>
+    <conf name="debugCompile" visibility="private" description="Classpath for compiling the debug sources."/>
+    <conf name="debugProvided" visibility="private" description="Classpath for only compiling the debug sources."/>
+    <conf name="debugWearApp" visibility="private" description="Link to a wear app to embed for object 'debug'."/>
+    <conf name="default" visibility="public" description="Configuration for default artifacts."/>
+    <conf name="default-mapping" visibility="public" description="Configuration for default mapping artifacts."/>
+    <conf name="default-metadata" visibility="public" description="Metadata for the produced APKs."/>
+    <conf name="provided" visibility="private" description="Classpath for only compiling the main sources."/>
+    <conf name="releaseApk" visibility="private" description="Classpath packaged with the compiled 'release' classes."/>
+    <conf name="releaseCompile" visibility="private" description="Classpath for compiling the release sources."/>
+    <conf name="releaseProvided" visibility="private" description="Classpath for only compiling the release sources."/>
+    <conf name="releaseWearApp" visibility="private" description="Link to a wear app to embed for object 'release'."/>
+    <conf name="testApk" visibility="private" description="Classpath packaged with the compiled 'test' classes."/>
+    <conf name="testCompile" visibility="private" description="Classpath for compiling the test sources."/>
+    <conf name="testDebugApk" visibility="private" description="Classpath packaged with the compiled 'testDebug' classes."/>
+    <conf name="testDebugCompile" visibility="private" description="Classpath for compiling the testDebug sources."/>
+    <conf name="testDebugProvided" visibility="private" description="Classpath for only compiling the testDebug sources."/>
+    <conf name="testDebugWearApp" visibility="private" description="Link to a wear app to embed for object 'testDebug'."/>
+    <conf name="testProvided" visibility="private" description="Classpath for only compiling the test sources."/>
+    <conf name="testReleaseApk" visibility="private" description="Classpath packaged with the compiled 'testRelease' classes."/>
+    <conf name="testReleaseCompile" visibility="private" description="Classpath for compiling the testRelease sources."/>
+    <conf name="testReleaseProvided" visibility="private" description="Classpath for only compiling the testRelease sources."/>
+    <conf name="testReleaseWearApp" visibility="private" description="Link to a wear app to embed for object 'testRelease'."/>
+    <conf name="testWearApp" visibility="private" description="Link to a wear app to embed for object 'test'."/>
+    <conf name="wearApp" visibility="private" description="Link to a wear app to embed for object 'main'."/>
+  </configurations>
+  <publications>
+    <artifact name="ps-app" type="apk" ext="apk" conf="archives,default"/>
+  </publications>
+  <dependencies>
+    <dependency org="com.android.support" name="appcompat-v7" rev="23.1.1" conf="compile-&gt;default"/>
+    <dependency org="com.android.support" name="cardview-v7" rev="23.1.1" conf="compile-&gt;default"/>
+    <dependency org="com.android.support" name="design" rev="23.1.1" conf="compile-&gt;default"/>
+    <dependency org="com.android.support" name="support-v4" rev="23.1.1" conf="compile-&gt;default"/>
+    <dependency org="EarthViewDemo" name="earthview-android" rev="unspecified" conf="compile-&gt;default"/>
+    <dependency org="com.github.afollestad.material-dialogs" name="core" rev="0.8.5.2" conf="compile-&gt;default">
+      <artifact name="core" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.github.afollestad.material-dialogs" name="commons" rev="0.8.5.2" conf="compile-&gt;default">
+      <artifact name="commons" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.mikepenz" name="materialdrawer" rev="4.5.6" conf="compile-&gt;default">
+      <artifact name="materialdrawer" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.mikepenz" name="aboutlibraries" rev="5.3.4" conf="compile-&gt;default">
+      <artifact name="aboutlibraries" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.squareup.picasso" name="picasso" rev="2.5.2" conf="compile-&gt;default"/>
+    <dependency org="com.squareup.okhttp" name="okhttp" rev="2.6.0" conf="compile-&gt;default"/>
+    <dependency org="com.squareup.okhttp" name="okhttp-urlconnection" rev="2.6.0" conf="compile-&gt;default"/>
+    <dependency org="com.mikepenz" name="iconics-core" rev="2.5.0" transitive="false" conf="compile-&gt;default">
+      <artifact name="iconics-core" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.mikepenz" name="google-material-typeface" rev="2.2.0.1" transitive="false" conf="compile-&gt;default">
+      <artifact name="google-material-typeface" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.mikepenz" name="community-material-typeface" rev="1.3.41.1" transitive="false" conf="compile-&gt;default">
+      <artifact name="community-material-typeface" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.mikepenz" name="fontawesome-typeface" rev="4.5.0.1" transitive="false" conf="compile-&gt;default">
+      <artifact name="fontawesome-typeface" type="aar" ext="aar" conf=""/>
+    </dependency>
+    <dependency org="com.github.clans" name="fab" rev="1.6.2" conf="compile-&gt;default"/>
+    <dependency org="com.github.arimorty" name="floatingsearchview" rev="1.1.2" conf="compile-&gt;default"/>
+    <dependency org="io.paperdb" name="paperdb" rev="1.1" conf="compile-&gt;default"/>
+    <dependency org="com.github.lawloretienne" name="quickreturn" rev="0.0.3" conf="compile-&gt;default"/>
+    <dependency org="junit" name="junit" rev="4.12" conf="testCompile-&gt;default"/>
+  </dependencies>
+</ivy-module>
