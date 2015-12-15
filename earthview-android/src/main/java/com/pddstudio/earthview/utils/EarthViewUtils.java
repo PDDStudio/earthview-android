@@ -14,18 +14,27 @@
  * limitations under the License.
  */
 
-package com.pddstudio.earthview;
-
-import java.util.Collection;
+package com.pddstudio.earthview.utils;
 
 /**
  * This Class was created by Patrick J
- * on 10.12.15. For more Details and Licensing
+ * on 13.12.15. For more Details and Licensing
  * have a look at the README.md
  */
-public interface EarthViewCallback {
-    void onStartedLoading(int totalItemSize);
-    void onItemLoaded(EarthWallpaper earthWallpaper);
-    void onFinishedLoading(Collection<EarthWallpaper> earthWallpapers);
-    void onCancelledLoading(Collection<EarthWallpaper> earthWallpapers);
+public final class EarthViewUtils {
+
+    private static String[] earthIds = IdUtils.getIdList();
+
+    public static String[] getAllEarthViewIds() {
+        return earthIds;
+    }
+
+    public static int[] getAllEarthViewIntIds() {
+        int[] wallIds = new int[earthIds.length];
+        for(int i = 0; i < earthIds.length; i++) {
+            wallIds[i] = Integer.parseInt(earthIds[i]);
+        }
+        return wallIds;
+    }
+
 }
