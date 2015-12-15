@@ -1,15 +1,19 @@
 #EarthView Android Library
 A simple and easy to use API to integrate [EarthView with Google](http://earthview.withgoogle.com) into your android application.
 
+[![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-earthview--android-green.svg?style=true)](https://android-arsenal.com/details/1/2902)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android)
+
 ##Showcase
 ###Screenshot
 ![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
 ###Demo Application
-You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/app-debug.apk). This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
+You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk). This is not the final sample application yet, but it should be enough to show you how to integrate and use this Library.
 
 ##Getting Started
 Include the library into your project by adding the following line to your ```build.gradle```:
-```compile 'com.pddstudio:earthview-android:1.0.0'```
+```compile 'com.pddstudio:earthview-android:[VERSION]'```
+**Note:** *To make sure you're using the latest version, take a look at the maven badge above*
 
 ##Usage
  - Implement either `SingleEarthViewCallback` (for a single EarthView) or `EarthViewCallback` (for multiple EarthViews) into your Activity, Adapter or any other class where you want to load the EarthView's.
@@ -140,6 +144,10 @@ You can find more information in the EarthView JavaDoc.
 ##About & Contact
 - In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
 - or [Google+](http://plus.google.com/+PatrickJung42)
+
+##Contributors
+*A special thanks goes to everyone who contributed to this project!*
+- [Alex Lionne](https://github.com/AlexLionne)
 
 ##License
     Copyright 2015 Patrick J
