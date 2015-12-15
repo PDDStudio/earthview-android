@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  ~ Copyright 2015 - Patrick J - earthview-android
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+  -->
+
+<resources>
+    <string name="define_EarthViewAndroid"></string>
+    <string name="library_EarthViewAndroid_author">Patrick J</string>
+    <string name="library_EarthViewAndroid_authorWebsite">http://pddstudio.com/</string>
+    <string name="library_EarthViewAndroid_libraryName">EarthView for Android</string>
+    <string name="library_EarthViewAndroid_libraryDescription">A simple and easy to use API to integrate EarthView with Google into your android application.</string>
+    <string name="library_EarthViewAndroid_libraryVersion">1.0.0</string>
+    <string name="library_EarthViewAndroid_libraryWebsite">https://github.com/pddstudio/earthview-android/</string>
+    <string name="library_EarthViewAndroid_licenseId">apache_2_0</string>
+    <string name="library_EarthViewAndroid_isOpenSource">true</string>
+    <string name="library_EarthViewAndroid_repositoryLink">https://github.com/pddstudio/earthview-android/</string>
+</resources>

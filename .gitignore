@@ -1,9 +1,11 @@
+/ps-non-git
 *.iml
 .gradle
 /local.properties
 /.idea/workspace.xml
 /.idea/libraries
 .DS_Store
+.navigation
 /build
 /captures
 /ps-non-git

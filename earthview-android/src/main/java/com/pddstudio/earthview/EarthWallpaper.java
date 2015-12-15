@@ -1,3 +1,19 @@
+/*
+ * Copyright 2015 - Patrick J - earthview-android
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *    http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package com.pddstudio.earthview;
 
 import android.util.Log;
@@ -16,6 +32,7 @@ public class EarthWallpaper implements Serializable {
     //the base url
     private static final String EARTHVIEW_BASE_URL = "https://earthview.withgoogle.com";
     private static final String WALLPAPER_EXTENSION = ".jpg";
+    private static final String EARTHVIEW_SHARE_URL = "https://g.co/ev/";
 
     //hidden information for background operations
     @SerializedName("id") private String wallpaperId;
@@ -204,12 +221,20 @@ public class EarthWallpaper implements Serializable {
         return wallpaperTitle;
     }
 
-    public String getFormattedFileName(boolean withExtension) {
+    public String getFormattedFileName(boolean withExtension, boolean withIdInName) {
         int cutIndex = wallpaperSlug.lastIndexOf("-");
         String formattedName = wallpaperSlug.substring(0, cutIndex);
         Log.d("EarthWallpaper", "formattedFileName: " + formattedName);
-        if(withExtension) return formattedName + WALLPAPER_EXTENSION;
+        if(withExtension && !withIdInName) {
+            return formattedName + WALLPAPER_EXTENSION;
+        } else if(withExtension && withIdInName) {
+            return formattedName + "-" + wallpaperId + WALLPAPER_EXTENSION;
+        }
         else return formattedName;
+    }
+
+    public String getShareUrl() {
+        return EARTHVIEW_SHARE_URL + wallpaperId;
     }
 
 }
