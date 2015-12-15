@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/home/jitpack/build/commons/src/main/res/values-large/dimens.xml -->
-    <eat-comment/>
-    <dimen name="md_preference_content_inset">28dp</dimen>
-</resources>

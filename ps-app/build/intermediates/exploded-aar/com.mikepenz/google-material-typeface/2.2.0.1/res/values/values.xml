@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <!-- From: file:/Users/mikepenz/Drive/Development/AndroidLibraries/Android-Iconics/google-material-typeface-library/src/main/res/values/font_google_material.xml -->
-    <eat-comment/>
-    <string name="define_font_googlematerial">com.mikepenz.google_material_typeface_library.GoogleMaterial</string>
-</resources>
