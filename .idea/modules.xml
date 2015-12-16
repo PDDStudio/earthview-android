@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/earthview-android/earthview-android.iml" filepath="$PROJECT_DIR$/earthview-android/earthview-android.iml" />
       <module fileurl="file://$PROJECT_DIR$/ps-app/ps-app.iml" filepath="$PROJECT_DIR$/ps-app/ps-app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/wheelview-test/wheelview-test.iml" filepath="$PROJECT_DIR$/wheelview-test/wheelview-test.iml" />
     </modules>
   </component>
 </project>

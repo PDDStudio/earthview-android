@@ -24,8 +24,8 @@ android {
         applicationId "com.pddstudio.earthviewer"
         minSdkVersion 17
         targetSdkVersion 23
-        versionCode 2
-        versionName "0.2-BETA"
+        versionCode 3
+        versionName "0.2.1-BETA"
     }
     buildTypes {
         release {
@@ -86,5 +86,7 @@ dependencies {
     compile 'io.paperdb:paperdb:1.1'
     compile 'com.github.lawloretienne:quickreturn:0.0.3'
     compile 'com.google.android.apps.muzei:muzei-api:2.0'
+    //compile 'com.lantouzi.wheelview:library:1.0.1'
+    compile project(':wheelview-test')
 
 }

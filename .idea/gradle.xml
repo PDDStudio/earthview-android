@@ -13,6 +13,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/earthview-android" />
             <option value="$PROJECT_DIR$/ps-app" />
+            <option value="$PROJECT_DIR$/wheelview-test" />
           </set>
         </option>
       </GradleProjectSettings>
