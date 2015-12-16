@@ -23,6 +23,8 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!-- For Muzei Wallpaper (other permissions are required anyways) -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
 
     <application
         android:allowBackup="true"
@@ -71,6 +73,16 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/providers"/>
         </provider>
+
+        <!-- Muzei Wallpaper Service -->
+        <service android:name=".muzei.EarthViewerSource"
+            android:icon="@drawable/earthviewicon"
+            android:label="@string/app_name"
+            android:description="@string/app_bar_sub_title">
+            <intent-filter>
+                <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
+            </intent-filter>
+        </service>
 
     </application>
 
