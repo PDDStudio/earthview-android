@@ -149,5 +149,17 @@
         <item name="colorButtonNormal">@color/colorAccent</item>
         <item name="colorControlNormal">@color/colorAccent</item>
     </style>
+    
+    <style name="ColorCheckBox">
+        <item name="android:theme">@style/ColorCheckBoxTheme</item>
+    </style>
 
+    <style name="ColorCheckBoxTheme">
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="colorButtonNormal">@color/colorAccent</item>
+        <item name="colorControlNormal">@color/colorAccent</item>
+        <item name="android:colorPrimary">@color/colorPrimary</item>
+        <item name="android:colorPrimaryDark">@color/colorPrimaryDark</item>
+    </style>
+    
 </resources>

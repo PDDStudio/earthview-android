@@ -14,4 +14,4 @@
  * limitations under the License.
  */
 
-include ':app', ':earthview-android', ':ps-app'
+include ':app', ':earthview-android', ':ps-app', ':wheelview-test'

@@ -147,4 +147,13 @@
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_about">AboutActivity</string>
 
+    <!-- Muzei related strings -->
+    <string name="muzei_settings_dialog_title">EarthViewer Muzei Settings</string>
+    <string name="muzei_settings_dialog_text_minutes">Set Background Interval (Minutes)</string>
+    <string name="muzei_settings_dialog_text_hours">Set Background Interval (Hours)</string>
+    <string name="muzei_settings_dialog_checkbox">Use hours instead of minutes</string>
+    <string name="muzei_settings_dialog_btn_positve">Apply</string>
+    <string name="muzei_settings_dialog_btn_negative">Cancel</string>
+
+
 </resources>

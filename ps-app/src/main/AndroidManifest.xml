@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+<?xml version="1.0" encoding="utf-8"?><!--
   ~ Copyright 2015 - Patrick J - ps-app
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
@@ -13,8 +12,7 @@
   ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
   ~ See the License for the specific language governing permissions and
   ~ limitations under the License.
-  -->
-
+-->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.pddstudio.earthviewer">
 
@@ -34,10 +32,10 @@
         android:theme="@style/AppTheme">
         <activity
             android:name=".DemoActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden">
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -46,22 +44,22 @@
         </activity>
         <activity
             android:name=".WallpaperActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_wallpaper"
-            android:theme="@style/AppTheme.NoActionBar.WallpaperPreview"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:theme="@style/AppTheme.NoActionBar.WallpaperPreview" />
         <activity
             android:name=".SettingsActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_settings"
-            android:theme="@style/AppTheme.NoActionBar.Settings"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:theme="@style/AppTheme.NoActionBar.Settings" />
         <activity
             android:name=".AboutActivity"
+            android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_about"
-            android:theme="@style/AppTheme.NoActionBar"
             android:screenOrientation="portrait"
-            android:configChanges="orientation|keyboardHidden"/>
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <!-- FileProvider to apply Wallpapers -->
         <provider
@@ -71,18 +69,26 @@
             android:grantUriPermissions="true">
             <meta-data
                 android:name="android.support.FILE_PROVIDER_PATHS"
-                android:resource="@xml/providers"/>
+                android:resource="@xml/providers" />
         </provider>
 
         <!-- Muzei Wallpaper Service -->
-        <service android:name=".muzei.EarthViewerSource"
+        <service
+            android:name=".muzei.EarthViewerSource"
+            android:description="@string/app_bar_sub_title"
             android:icon="@drawable/earthviewicon"
-            android:label="@string/app_name"
-            android:description="@string/app_bar_sub_title">
+            android:label="@string/app_name">
             <intent-filter>
                 <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
             </intent-filter>
+            <meta-data android:name="color" android:value="#3f51b5" />
+            <meta-data android:name="settingsActivity" android:value=".muzei.MuzeiSettingsActivity" />
         </service>
+
+        <activity
+            android:name=".muzei.MuzeiSettingsActivity"
+            android:theme="@style/AppTheme.Transparent"
+            android:exported="true" />
 
     </application>
 
