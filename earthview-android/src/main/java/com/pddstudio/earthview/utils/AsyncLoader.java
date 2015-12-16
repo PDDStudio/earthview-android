@@ -17,10 +17,8 @@
 package com.pddstudio.earthview.utils;
 
 import android.os.AsyncTask;
-import android.util.Log;
 
 import com.google.gson.Gson;
-import com.pddstudio.earthview.EarthView;
 import com.pddstudio.earthview.EarthViewCallback;
 import com.pddstudio.earthview.EarthWallpaper;
 import com.squareup.okhttp.OkHttpClient;
@@ -31,7 +29,6 @@ import java.io.IOException;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * This Class was created by Patrick J

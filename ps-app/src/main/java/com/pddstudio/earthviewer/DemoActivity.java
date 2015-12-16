@@ -20,7 +20,6 @@ import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.CoordinatorLayout;
@@ -38,7 +37,6 @@ import android.widget.FrameLayout;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.arlib.floatingsearchview.FloatingSearchView;
 import com.etiennelawlor.quickreturn.library.enums.QuickReturnViewType;
@@ -56,7 +54,6 @@ import com.mikepenz.materialdrawer.model.interfaces.IDrawerItem;
 import com.pddstudio.earthview.EarthView;
 import com.pddstudio.earthview.EarthViewCallback;
 import com.pddstudio.earthview.EarthWallpaper;
-import com.pddstudio.earthview.utils.IdUtils;
 import com.pddstudio.earthviewer.utils.Preferences;
 import com.pddstudio.earthviewer.views.BaseDialog;
 

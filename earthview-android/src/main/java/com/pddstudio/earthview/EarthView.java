@@ -19,6 +19,7 @@ package com.pddstudio.earthview;
 import android.os.AsyncTask;
 import android.util.Log;
 
+import com.pddstudio.earthview.sync.SynchronizedTask;
 import com.pddstudio.earthview.utils.AsyncLoader;
 import com.pddstudio.earthview.utils.IdUtils;
 import com.pddstudio.earthview.utils.SingleLoader;
@@ -88,9 +89,16 @@ public final class EarthView {
      * @param earthViewCallback - The interface the results will be sent to
      */
     public void getEarthWallpapers(int amount, EarthViewCallback earthViewCallback) {
-        //// TODO: 15.12.15 fix 
+        String[] wallId = IdUtils.getRandomIds(amount);
+        asyncLoader = new AsyncLoader(earthViewCallback, wallId);
+        asyncLoader.execute();
     }
 
+    /**
+     * Fetches a list of the given Ids in {@linkplain Set<String>} and returns the result to the given {@link EarthViewCallback}
+     * @param wallpaperIds - {@linkplain Set<String>} of IDs
+     * @param earthViewCallback - The interface the results will be sent to
+     */
     public void getEarthWallpapers(Set<String> wallpaperIds, EarthViewCallback earthViewCallback) {
         String walls[] = new String[wallpaperIds.size()];
         Iterator<String> stringIterator = wallpaperIds.iterator();
@@ -103,6 +111,11 @@ public final class EarthView {
         asyncLoader.execute();
     }
 
+    /**
+     * Fetches a list of the given Ids in {@linkplain String[]} and returns the result to the given {@link EarthViewCallback}
+     * @param wallpaperIds - {@linkplain String[]} of IDs
+     * @param earthViewCallback - The interface the results will be sent to
+     */
     public void getEarthWallpapers(String[] wallpaperIds, EarthViewCallback earthViewCallback) {
         cancelEarthViewLoadingTask();
         asyncLoader = new AsyncLoader(earthViewCallback, wallpaperIds);
@@ -112,11 +125,13 @@ public final class EarthView {
     /**
      * Fetches a list of random EarthViews with the given size and returns the result to the given {@link EarthViewCallback}.
      * The difference to {#getEarthWallpapers} is that each item will be checked if it already exist or not before returning it.
-     * @param ammount - The amount of EarthViews that should be fetched
+     * @param amount - The amount of EarthViews that should be fetched
      * @param earthViewCallback - The interface the results will be sent to
      */
-    public void getUniqueEarthWallpapers(int ammount, EarthViewCallback earthViewCallback) {
-        //TODO // FIXME: 15.12.15
+    public void getUniqueEarthWallpapers(int amount, EarthViewCallback earthViewCallback) {
+        String[] wallIds = IdUtils.getUniqueRandomIds(amount);
+        asyncLoader = new AsyncLoader(earthViewCallback, wallIds);
+        asyncLoader.execute();
     }
 
     /**
@@ -154,6 +169,107 @@ public final class EarthView {
     public void cancelEarthViewLoadingTask() {
         if(asyncLoader != null && asyncLoader.getStatus() == AsyncTask.Status.RUNNING) asyncLoader.cancel(true);
         asyncLoader = null;
+    }
+
+    /**
+     * Returns a new {@link com.pddstudio.earthview.EarthView.SynchronizedBuilder} instance.
+     * @return a new {@link com.pddstudio.earthview.EarthView.SynchronizedBuilder} instance.
+     */
+    public SynchronizedBuilder getSynchronizedBuilder() {
+        return new SynchronizedBuilder(this);
+    }
+
+    /**
+     * EarthView.SynchronizedBuilder allows to take usage of more customized configuration and advanced actions,
+     * especially for synchronized requests.
+     */
+    public static class SynchronizedBuilder {
+
+        public int earthWallpaperCount = 10;
+        public boolean multipleResults = false;
+        public boolean randomRequest = true;
+        public String[] earthWallIds = null;
+
+        SynchronizedBuilder(EarthView earthViewInstance) {}
+
+        /**
+         * Builder method to configure the synchronized task to return a single random {@link EarthWallpaper}
+         * @return
+         */
+        public SynchronizedBuilder getRandomWallpaper() {
+            this.multipleResults = false;
+            this.randomRequest = true;
+            this.earthWallpaperCount = 1;
+            return this;
+        }
+
+        /**
+         * Builder method to configure the synchronized task to return the given {@link EarthWallpaper}s by ID.
+         * This function can take single or multiple IDs as parameter.
+         *
+         * Note: In case one of the given IDs doesn't exist or the request failed the returned {@link EarthWallpaper} Array will
+         * have <p>null</p> at this position.
+         * @param earthWallpaperId
+         * @return
+         */
+        public SynchronizedBuilder getEarthWallpaperById(String... earthWallpaperId) {
+            this.randomRequest = false;
+            this.earthWallpaperCount = 1;
+            if(earthWallpaperId.length == 0) {
+                this.earthWallIds = new String[earthWallpaperCount];
+                this.randomRequest = true;
+            } else {
+                this.earthWallIds = earthWallpaperId;
+                this.multipleResults = earthWallpaperId.length > 1;
+                this.earthWallpaperCount = earthWallpaperId.length;
+            }
+            return this;
+        }
+
+        /**
+         * Builder method to configure the synchronized task to return an Array of random {@link EarthWallpaper}
+         * @param amount - Item size of the returned array
+         * @return
+         */
+        public SynchronizedBuilder getRandomWallpapers(int amount) {
+            this.multipleResults = true;
+            this.randomRequest = true;
+            if(amount <= 0) {
+                this.earthWallpaperCount = 10;
+                Log.w("EarthView", "AMOUNT FOR RANDOM WALLPAPERS CAN'T BE 0 OR NEGATIVE! USING 10 AS ALTERNATIVE");
+            } else {
+                this.earthWallpaperCount = amount;
+            }
+            this.earthWallIds = IdUtils.getRandomIds(earthWallpaperCount);
+            return this;
+        }
+
+        /**
+         * Applies the configuration and returns a {@link SynchronizedTask} instance.
+         * @return The {@link SynchronizedTask} instance
+         */
+        public SynchronizedTask build() {
+            return SynchronizedTask.forBuilder(this);
+        }
+
+        /**
+         * Applies the configuration to a new {@link SynchronizedTask} instance and execute it.
+         * @return {@linkplain SynchronizedTask#execute()}
+         */
+        public EarthWallpaper[] executeWithResults() {
+            SynchronizedTask synchronizedTask = SynchronizedTask.forBuilder(this);
+            return synchronizedTask.execute();
+        }
+
+        /**
+         * Applies the configuration to a new {@link SynchronizedTask} instance and execute it.
+         * @return first index of {@linkplain SynchronizedTask#execute()}
+         */
+        public EarthWallpaper executeWithResult() {
+            SynchronizedTask synchronizedTask = SynchronizedTask.forBuilder(this);
+            return synchronizedTask.execute()[0];
+        }
+
     }
 
 }
