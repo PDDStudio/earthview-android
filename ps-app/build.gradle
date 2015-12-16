@@ -85,5 +85,6 @@ dependencies {
     compile 'com.github.arimorty:floatingsearchview:1.1.2'
     compile 'io.paperdb:paperdb:1.1'
     compile 'com.github.lawloretienne:quickreturn:0.0.3'
+    compile 'com.google.android.apps.muzei:muzei-api:2.0'
 
 }
