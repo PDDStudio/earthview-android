@@ -5,16 +5,17 @@ A simple and easy to use API to integrate [EarthView with Google](http://earthvi
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android)
 
 ##Showcase
-###Screenshot
-![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
-###Simple Demo Application
-You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk).
 ###Advanced Demo Application (Beta)
 To showcase the different possibilities of this library I've created a demo 'Wallpaper Application'.
 You can find the source for this application in the `ps-app/` folder.
 In case you want to install the Application, feel free to do so! **It's on Google Play™**
 
 [![](https://github.com/PDDStudio/earthview-android/blob/master/preview/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer)
+
+###Screenshot
+![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
+###Simple Demo Application
+You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk).
 
 ##Getting Started
 Include the library into your project by adding the following line to your ```build.gradle```:
