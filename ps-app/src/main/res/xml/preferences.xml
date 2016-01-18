@@ -50,6 +50,12 @@
             android:entries="@array/pref_columns_count_str"
             android:entryValues="@array/pref_columns_count_str" />
 
+        <CheckBoxPreference
+            android:key="load_walls_random"
+            android:title="@string/preferences_item_load_random_title"
+            android:summary="@string/preferences_item_load_random_summary"
+            android:defaultValue="false" />
+
         <com.pddstudio.earthviewer.utils.preferences.SaveDirectoryPreference
             android:key="wall_output_dir"
             android:title="@string/preferences_item_output_dir_title"

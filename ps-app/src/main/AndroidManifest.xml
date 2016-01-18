@@ -60,8 +60,8 @@
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Settings" />
-
-        <activity android:name=".SettingsActivityPre"
+        <activity
+            android:name=".SettingsActivityPre"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait"
@@ -70,6 +70,18 @@
             android:name=".AboutActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_about"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FavoritesActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_favorites"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar.Favorites" />
+        <activity
+            android:name=".FavoritesActivityPre"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_favorites"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar" />
 

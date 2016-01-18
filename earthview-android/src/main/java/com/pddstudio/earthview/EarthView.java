@@ -26,7 +26,9 @@ import com.pddstudio.earthview.utils.SingleLoader;
 
 import java.util.Collection;
 import java.util.Iterator;
+import java.util.Random;
 import java.util.Set;
+import java.util.concurrent.ThreadLocalRandom;
 
 
 /**
@@ -81,6 +83,26 @@ public final class EarthView {
         cancelEarthViewLoadingTask();
         asyncLoader = new AsyncLoader(earthViewCallback, IdUtils.getIdList());
         asyncLoader.execute();
+    }
+
+    public void getAllEarthWallpapers(EarthViewCallback earthViewCallback, boolean mixed) {
+        cancelEarthViewLoadingTask();
+        if(mixed) {
+            String[] randomIds = IdUtils.getIdList();
+            Random random = new Random();
+            for(int i = randomIds.length - 1; i > 0; i-- ) {
+                int index = random.nextInt(i + 1);
+                String alt = randomIds[index];
+                randomIds[index] = randomIds[i];
+                randomIds[i] = alt;
+            }
+            asyncLoader = new AsyncLoader(earthViewCallback, randomIds);
+            asyncLoader.execute();
+        } else {
+            asyncLoader = new AsyncLoader(earthViewCallback, IdUtils.getIdList());
+            asyncLoader.execute();
+        }
+
     }
 
     /**

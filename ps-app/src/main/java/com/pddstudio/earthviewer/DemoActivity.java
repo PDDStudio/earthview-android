@@ -138,7 +138,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                 if(Preferences.getInstance().isOnWiFi()) {
                     loadingButton.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    earthView.getAllEarthWallpapers(DemoActivity.this);
+                    earthView.getAllEarthWallpapers(DemoActivity.this, Preferences.getInstance().getShuffleWallpapers());
                 } else {
                     new BaseDialog(DemoActivity.this).showNoWifiConnectionDialog(DemoActivity.this);
                 }
@@ -198,7 +198,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             if(Preferences.getInstance().isOnWiFi()) {
                 loadingButton.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
-                earthView.getAllEarthWallpapers(this);
+                earthView.getAllEarthWallpapers(this, Preferences.getInstance().getShuffleWallpapers());
             } else {
                 new BaseDialog(this).showNoWifiConnectionDialog(this);
             }
@@ -227,7 +227,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                 if(Preferences.getInstance().isOnWiFi()) {
                     loadingButton.setVisibility(View.GONE);
                     progressBar.setVisibility(View.VISIBLE);
-                    earthView.getAllEarthWallpapers(DemoActivity.this);
+                    earthView.getAllEarthWallpapers(DemoActivity.this, Preferences.getInstance().getShuffleWallpapers());
                 } else {
                     new BaseDialog(DemoActivity.this).showNoWifiConnectionDialog(DemoActivity.this);
                 }
@@ -257,7 +257,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             if(Preferences.getInstance().isOnWiFi()) {
                 loadingButton.setVisibility(View.GONE);
                 progressBar.setVisibility(View.VISIBLE);
-                earthView.getAllEarthWallpapers(this);
+                earthView.getAllEarthWallpapers(this, Preferences.getInstance().getShuffleWallpapers());
             } else {
                 new BaseDialog(this).showNoWifiConnectionDialog(this);
             }
@@ -405,7 +405,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
         drawerItems.add(wallSection);
         PrimaryDrawerItem homeItem = new PrimaryDrawerItem().withIdentifier(DRAWER_HOME).withName(R.string.navigation_item_home).withDescription(R.string.navigation_item_home_desc).withIcon(CommunityMaterial.Icon.cmd_terrain).withSetSelected(true);
         drawerItems.add(homeItem);
-        PrimaryDrawerItem favItem = new PrimaryDrawerItem().withIdentifier(DRAWER_FAV).withName(R.string.navigation_item_favourites).withDescription(R.string.navigation_item_favourites_desc).withIcon(CommunityMaterial.Icon.cmd_heart).withEnabled(false);
+        PrimaryDrawerItem favItem = new PrimaryDrawerItem().withIdentifier(DRAWER_FAV).withName(R.string.navigation_item_favourites).withDescription(R.string.navigation_item_favourites_desc).withIcon(CommunityMaterial.Icon.cmd_heart).withSelectable(false);
         drawerItems.add(favItem);
         SectionDrawerItem aboutSection = new SectionDrawerItem().withName(R.string.navigation_section_about);
         drawerItems.add(aboutSection);
@@ -430,20 +430,27 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                     public boolean onItemClick(View view, int position, IDrawerItem drawerItem) {
                         switch (drawerItem.getIdentifier()) {
                             case DRAWER_HOME:
-                                if(DRAWER_POSITION != DRAWER_HOME) {
+                                if (DRAWER_POSITION != DRAWER_HOME) {
                                     earthView.cancelAllRunningTasks();
-                                    if(recyclerView != null && recyclerView.getAdapter() != null) {
+                                    if (recyclerView != null && recyclerView.getAdapter() != null) {
                                         ((EarthViewAdapter) recyclerView.getAdapter()).cleanDataSet();
                                     }
                                     DRAWER_POSITION = DRAWER_HOME;
                                 }
                                 break;
                             case DRAWER_FAV:
-                                if(DRAWER_POSITION != DRAWER_FAV) {
-                                    earthView.cancelAllRunningTasks();
-                                    if(recyclerView != null && recyclerView.getAdapter() != null) {
-                                        ((EarthViewAdapter) recyclerView.getAdapter()).cleanDataSet();
+                                if (DRAWER_POSITION != DRAWER_FAV) {
+                                    //earthView.cancelAllRunningTasks();
+                                    //if(recyclerView != null && recyclerView.getAdapter() != null) {
+                                    //    ((EarthViewAdapter) recyclerView.getAdapter()).cleanDataSet();
+                                    //}
+                                    Intent favActivity;
+                                    if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
+                                        favActivity = new Intent(DemoActivity.this, FavoritesActivityPre.class);
+                                    } else {
+                                        favActivity = new Intent(DemoActivity.this, FavoritesActivity.class);
                                     }
+                                    startActivity(favActivity);
                                     DRAWER_POSITION = DRAWER_HOME;
                                 }
                                 break;
@@ -465,15 +472,15 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                                 break;
                             case DRAWER_PREFS:
                                 Intent preferences;
-                                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
                                     preferences = new Intent(DemoActivity.this, SettingsActivity.class);
-                                }  else {
+                                } else {
                                     preferences = new Intent(DemoActivity.this, SettingsActivityPre.class);
                                 }
                                 startActivity(preferences);
                                 break;
                         }
-                        if(drawer.isDrawerOpen()) drawer.closeDrawer();
+                        if (drawer.isDrawerOpen()) drawer.closeDrawer();
                         return true;
                     }
                 })
@@ -525,7 +532,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     public void onLoadWithoutWifiConfirmed() {
         loadingButton.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
-        earthView.getAllEarthWallpapers(this);
+        earthView.getAllEarthWallpapers(this, Preferences.getInstance().getShuffleWallpapers());
         if(Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) recyclerView.addOnScrollListener(connectionScrollListener);
     }
 }

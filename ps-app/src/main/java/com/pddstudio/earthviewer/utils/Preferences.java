@@ -93,6 +93,7 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
     private static final String FAVORITES = "wall_favs";
     private static final String FAVORITES_IDS = "wall_favs_ids";
     private static final String AUTO_LOAD_WIFI = "auto_load_wifi";
+    private static final String SHUFFLE_WALLPAPERS = "load_walls_random";
 
     private final AppCompatActivity activity;
     private final Context context;
@@ -330,44 +331,22 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
         return sharedPreferences.getBoolean(AUTO_LOAD_WIFI, true);
     }
 
-    public void addFavorite(EarthWallpaper earthWallpaper) {
-        /*ArrayList<EarthWallpaper> favorites = Paper.book().read(FAVORITES, new ArrayList<EarthWallpaper>());
-        favorites.add(earthWallpaper);
-        Paper.book().write(FAVORITES, favorites);
-        Log.d("FavAction", "added ID [" + earthWallpaper.getWallpaperId() + "] to favorites!");*/
+    public boolean getShuffleWallpapers() {
+        boolean shuffle = sharedPreferences.getBoolean(SHUFFLE_WALLPAPERS, false);
+        Log.d("Preferences", "getShuffleWallpapers() : " + shuffle);
+        return shuffle;
+    }
 
-        ArrayList<String> favIds = Paper.book().read(FAVORITES_IDS, new ArrayList<String>());
-        favIds.add(earthWallpaper.getWallpaperId());
-        Paper.book().write(FAVORITES_IDS, favIds);
-        Log.d("FavAction", "added ID [" + earthWallpaper.getWallpaperId() + "] to favorites!");
+    public void addFavorite(EarthWallpaper earthWallpaper) {
+        Favorites.getFavorites(context).addFavorite(earthWallpaper);
     }
 
     public boolean isFavorite(EarthWallpaper earthWallpaper) {
-        ArrayList<String> favorites = Paper.book().read(FAVORITES_IDS, new ArrayList<String>());
-        for(String fav : favorites) {
-            if(fav.equals(earthWallpaper.getWallpaperId())) return true;
-        }
-        return false;
+        return Favorites.getFavorites(context).isFavorite(earthWallpaper);
     }
 
     public void removeFavorite(EarthWallpaper earthWallpaper) {
-        ArrayList<String> favorites = Paper.book().read(FAVORITES_IDS, new ArrayList<String>());
-        if(favorites.contains(earthWallpaper.getWallpaperId())) {
-            favorites.remove(earthWallpaper.getWallpaperId());
-            Log.d("FavAction", "removed ID [" + earthWallpaper.getWallpaperId() + "] from favorites!");
-            Paper.book().write(FAVORITES_IDS, favorites);
-        } else {
-            Log.d("FavAction", "unable to find favorite with ID [" + earthWallpaper.getWallpaperId() + "] ! Skipping...");
-        }
-    }
-
-    public String[] getFavorites() {
-        ArrayList<String> favorites = Paper.book().read(FAVORITES_IDS, new ArrayList<String>());
-        String[] favIds = new String[favorites.size()];
-        for(int i = 0; i < favorites.size(); i++) {
-            favIds[i] = favorites.get(i);
-        }
-        return favIds;
+        Favorites.getFavorites(context).removeFavorite(earthWallpaper);
     }
 
 }
