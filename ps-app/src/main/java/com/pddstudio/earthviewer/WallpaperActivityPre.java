@@ -43,6 +43,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.afollestad.materialdialogs.MaterialDialog;
 import com.github.clans.fab.FloatingActionButton;
@@ -62,7 +63,7 @@ import com.squareup.picasso.Picasso;
 import java.io.File;
 import java.io.IOException;
 
-public class WallpaperActivity extends AppCompatActivity implements Preferences.PermissionCallback,
+public class WallpaperActivityPre extends AppCompatActivity implements Preferences.PermissionCallback,
         SingleEarthViewCallback, DownloadHighResImage.ImageCachingCallback, DownloadWallpaperTask.DownloadCallback {
 
     public static final String WALLPAPER_OBJECT = "com.pddstudio.wallpaperrecyclerdemo.earthWallpaperObject";
@@ -111,6 +112,9 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
         Intent data = getIntent();
         earthWallpaper = (EarthWallpaper) data.getExtras().getSerializable(WALLPAPER_OBJECT);
         //setTheme(R.style.AppTheme_NoActionBar);
+        if(Build.VERSION.SDK_INT <= Build.VERSION_CODES.KITKAT) {
+            setTheme(R.style.AppTheme_NoActionBar);
+        }
         setContentView(R.layout.activity_wallpaper);
 
         downloadDialog = new BaseDialog(this).getDownloadDialog();
@@ -239,7 +243,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
 
                 if (Preferences.getInstance().isFavorite(earthWallpaper)) {
                     Preferences.getInstance().removeFavorite(earthWallpaper);
-                    floatingActionArchive.setImageDrawable(new IconicsDrawable(WallpaperActivity.this).icon(CommunityMaterial.Icon.cmd_heart).color(Color.WHITE).sizeDp(16));
+                    floatingActionArchive.setImageDrawable(new IconicsDrawable(WallpaperActivityPre.this).icon(CommunityMaterial.Icon.cmd_heart).color(Color.WHITE).sizeDp(16));
                     floatingActionArchive.setLabelText(getResources().getString(R.string.fab_menu_item_archive));
                     Snackbar.make(rootLayout, R.string.fab_snack_bar_fav_removed, Snackbar.LENGTH_SHORT).setAction(R.string.fab_snack_bar_fav_action, new View.OnClickListener() {
                         @Override
@@ -247,7 +251,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
                     }).show();
                 } else {
                     Preferences.getInstance().addFavorite(earthWallpaper);
-                    floatingActionArchive.setImageDrawable(new IconicsDrawable(WallpaperActivity.this).icon(CommunityMaterial.Icon.cmd_heart_outline).color(Color.WHITE).sizeDp(16));
+                    floatingActionArchive.setImageDrawable(new IconicsDrawable(WallpaperActivityPre.this).icon(CommunityMaterial.Icon.cmd_heart_outline).color(Color.WHITE).sizeDp(16));
                     floatingActionArchive.setLabelText(getResources().getString(R.string.fab_menu_item_remove_archive));
                     Snackbar.make(rootLayout, R.string.fab_snack_bar_fav_added, Snackbar.LENGTH_SHORT).setAction(R.string.fab_snack_bar_fav_action, new View.OnClickListener() {
                         @Override
@@ -264,9 +268,9 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
             public void onClick(View v) {
                 if (floatingActionMenu.isOpened()) floatingActionMenu.close(true);
                 if (Preferences.getInstance().canWriteExternalStorage()) {
-                    new DownloadWallpaperTask(WallpaperActivity.this, Preferences.getInstance().getWallpaperDownloadDir(), earthWallpaper).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, unlock);
+                    new DownloadWallpaperTask(WallpaperActivityPre.this, Preferences.getInstance().getWallpaperDownloadDir(), earthWallpaper).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, unlock);
                 } else {
-                    Preferences.getInstance().requestExternalStoragePermission(WallpaperActivity.this, WallpaperActivity.this, false);
+                    Preferences.getInstance().requestExternalStoragePermission(WallpaperActivityPre.this, WallpaperActivityPre.this, false);
                 }
             }
         });
@@ -282,7 +286,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
         if(floatingActionMenu != null && floatingActionMenu.isOpened()) {
             floatingActionMenu.close(true);
         } else {
-            WallpaperActivity.this.supportFinishAfterTransition();
+            WallpaperActivityPre.this.supportFinishAfterTransition();
         }
     }
 
@@ -295,7 +299,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
                 return true;
             case R.id.menu_load_full_wall:
                 if(appBarImage != null) {
-                    Picasso.with(WallpaperActivity.this).load(wallpaperFile).into(appBarImage);
+                    Picasso.with(WallpaperActivityPre.this).load(wallpaperFile).into(appBarImage);
                     menuItemHD.setVisible(false);
                 }
                 break;
@@ -328,7 +332,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
                     @Override
                     public void onClick(View v) {
                         if(!Preferences.getInstance().canWriteExternalStorage())
-                        Preferences.getInstance().requestExternalStoragePermission(WallpaperActivity.this, WallpaperActivity.this, true);
+                            Preferences.getInstance().requestExternalStoragePermission(WallpaperActivityPre.this, WallpaperActivityPre.this, true);
                     }
                 }).show();
             }
@@ -337,7 +341,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
 
     @Override
     public void onPermissionExplanationRequired(boolean showExplanation, String requiredPermission) {
-        if(showExplanation) WallpaperActivity.this.showPermissionExplanation(requiredPermission);
+        if(showExplanation) WallpaperActivityPre.this.showPermissionExplanation(requiredPermission);
     }
 
     private void showPermissionExplanation(String permission) {
@@ -380,6 +384,7 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
                     try {
                         wallpaperManager.setBitmap(wallpaper);
                         if(floatingActionMenu.isOpened())floatingActionMenu.close(true);
+                        Toast.makeText(this, "Image set as Wallpaper", Toast.LENGTH_SHORT).show();
                     } catch (IOException io) {
                         io.printStackTrace();
                     }

@@ -15,14 +15,15 @@
   ~ limitations under the License.
   -->
 
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.pddstudio.wallpaperrecyclerdemo.DemoActivity"
-    tools:showIn="@layout/activity_demo">
+    tools:showIn="@layout/activity_demo_pre">
 
     <LinearLayout
         android:id="@+id/loading_layout"
@@ -81,60 +82,6 @@
         android:id="@+id/earth_wall_recycler_view"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
-
-    <!-- quick return footer -->
-
-    <FrameLayout
-        android:id="@+id/loading_footer_bar_frame"
-        xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:fitsSystemWindows="true"
-        android:background="#ff171717">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:orientation="horizontal">
-
-            <ProgressBar
-                android:id="@+id/async_progress_bar"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:indeterminate="true"
-                android:paddingStart="2dp"
-                android:paddingEnd="2dp"
-                android:paddingTop="8dp"
-                android:paddingBottom="8dp"/>
-
-            <TextView
-                android:id="@+id/progress_text"
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textSize="16sp"
-                android:textColor="#FFFFFF"
-                tools:text="Title"
-                android:minHeight="50dp"
-                android:gravity="center_vertical" />
-
-        </LinearLayout>
-
-        <Button
-            android:id="@+id/footer_cancel_btn"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            style="?android:attr/buttonBarButtonStyle"
-            android:background="?android:attr/selectableItemBackgroundBorderless"
-            android:text="@string/cancel"
-            android:layout_marginEnd="8dp"
-            android:layout_gravity="center_vertical|end"/>
-
-    </FrameLayout>
 
     <!-- error header -->
     <LinearLayout

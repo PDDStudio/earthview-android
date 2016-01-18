@@ -49,11 +49,23 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.WallpaperPreview" />
         <activity
+            android:name=".WallpaperActivityPre"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_wallpaper"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
             android:name=".SettingsActivity"
             android:configChanges="orientation|keyboardHidden"
             android:label="@string/title_activity_settings"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme.NoActionBar.Settings" />
+
+        <activity android:name=".SettingsActivityPre"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_settings"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".AboutActivity"
             android:configChanges="orientation|keyboardHidden"
@@ -81,14 +93,19 @@
             <intent-filter>
                 <action android:name="com.google.android.apps.muzei.api.MuzeiArtSource" />
             </intent-filter>
-            <meta-data android:name="color" android:value="#3f51b5" />
-            <meta-data android:name="settingsActivity" android:value=".muzei.MuzeiSettingsActivity" />
+
+            <meta-data
+                android:name="color"
+                android:value="#3f51b5" />
+            <meta-data
+                android:name="settingsActivity"
+                android:value=".muzei.MuzeiSettingsActivity" />
         </service>
 
         <activity
             android:name=".muzei.MuzeiSettingsActivity"
-            android:theme="@style/AppTheme.Transparent"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/AppTheme.Transparent" />
 
     </application>
 

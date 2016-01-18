@@ -38,7 +38,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.arlib.floatingsearchview.FloatingSearchView;
 import com.etiennelawlor.quickreturn.library.enums.QuickReturnViewType;
 import com.etiennelawlor.quickreturn.library.listeners.QuickReturnRecyclerViewOnScrollListener;
 import com.mikepenz.aboutlibraries.LibTaskExecutor;
@@ -76,7 +75,6 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     RecyclerView.Adapter earthViewAdapter;
     QuickReturnRecyclerViewOnScrollListener scrollListener;
     QuickReturnRecyclerViewOnScrollListener connectionScrollListener;
-    FloatingSearchView floatingSearchView;
     FrameLayout footerLayout;
     TextView footerLoadingText;
     Button footerButton;
@@ -98,7 +96,6 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_demo);
 
         if(!Preferences.exists()) {
             //init the preferences
@@ -109,6 +106,17 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             }
         }
 
+        if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
+            setContentView(R.layout.activity_demo_pre);
+            preparePreLollipop();
+        } else {
+            setContentView(R.layout.activity_demo);
+            prepareLollipop();
+        }
+
+    }
+
+    private void prepareLollipop() {
         Log.d("DemoActivity", "testing current active network connection... User is on Wifi? : " + Preferences.getInstance().isOnWiFi());
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -121,15 +129,6 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
         //build the drawer
         setUpNavigationDrawer();
         if(drawer != null) drawer.setSelection(DRAWER_HOME);
-
-        floatingSearchView = (FloatingSearchView) findViewById(R.id.wall_search_view);
-        floatingSearchView.setOnQueryChangeListener(new FloatingSearchView.OnQueryChangeListener() {
-            @Override
-            public void onSearchTextChanged(String oldQuery, String newQuery) {
-
-            }
-        });
-        floatingSearchView.setVisibility(View.GONE);
 
         loadingLayout = (LinearLayout) findViewById(R.id.loading_layout);
         loadingButton = (Button) findViewById(R.id.info_start_loading_bt);
@@ -182,6 +181,65 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                 .minHeaderTranslation(200)
                 .isSnappable(true)
                 .build();
+
+        if(LOAD_ASYNC) {
+            loadingLayout.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.INVISIBLE);
+            recyclerView.setVisibility(View.VISIBLE);
+            earthViewAdapter = new EarthViewAdapter(null, this);
+            recyclerView.setAdapter(earthViewAdapter);
+        } else {
+            loadingLayout.setVisibility(View.VISIBLE);
+            progressBar.setVisibility(View.INVISIBLE);
+            recyclerView.setVisibility(View.GONE);
+        }
+
+        if(Preferences.getInstance().getAutoLoadOnWifi()) {
+            if(Preferences.getInstance().isOnWiFi()) {
+                loadingButton.setVisibility(View.GONE);
+                progressBar.setVisibility(View.VISIBLE);
+                earthView.getAllEarthWallpapers(this);
+            } else {
+                new BaseDialog(this).showNoWifiConnectionDialog(this);
+            }
+        }
+    }
+
+    private void preparePreLollipop() {
+        Log.d("DemoActivity", "testing current active network connection... User is on Wifi? : " + Preferences.getInstance().isOnWiFi());
+
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        toolbar.setTitle(R.string.app_bar_title);
+        //toolbar.setSubtitle(R.string.app_bar_sub_title);
+        setSupportActionBar(toolbar);
+
+        rootLayout = (CoordinatorLayout) findViewById(R.id.coordinator_root);
+
+        //build the drawer
+        setUpNavigationDrawer();
+        if(drawer != null) drawer.setSelection(DRAWER_HOME);
+
+        loadingLayout = (LinearLayout) findViewById(R.id.loading_layout);
+        loadingButton = (Button) findViewById(R.id.info_start_loading_bt);
+        loadingButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                if(Preferences.getInstance().isOnWiFi()) {
+                    loadingButton.setVisibility(View.GONE);
+                    progressBar.setVisibility(View.VISIBLE);
+                    earthView.getAllEarthWallpapers(DemoActivity.this);
+                } else {
+                    new BaseDialog(DemoActivity.this).showNoWifiConnectionDialog(DemoActivity.this);
+                }
+            }
+        });
+        progressBar = (ProgressBar) findViewById(R.id.loading_progress_bar);
+
+        recyclerView = (RecyclerView) findViewById(R.id.earth_wall_recycler_view);
+        recyclerView.setHasFixedSize(true);
+
+        layoutManager = new GridLayoutManager(this, Preferences.getInstance().getGridColumnCount());
+        recyclerView.setLayoutManager(layoutManager);
 
         if(LOAD_ASYNC) {
             loadingLayout.setVisibility(View.VISIBLE);
@@ -279,7 +337,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     private void updateFooterBar(int count) {
         String baseText = getResources().getString(R.string.quick_return_loading_text);
         baseText = baseText + " (" + count + " of " + itemsTotal + ")";
-        footerLoadingText.setText(baseText);
+        if(footerLoadingText != null) footerLoadingText.setText(baseText);
     }
 
     private final EarthViewAdapter.OnItemClickListener onItemClickListener = new EarthViewAdapter.OnItemClickListener() {
@@ -289,14 +347,15 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             EarthWallpaper earthWallpaper = ((EarthViewAdapter) earthViewAdapter).getItemAtPosition(position);
             Log.d("EarthViewAdapter/click", "Clicked on wallpaper: " + earthWallpaper.getWallpaperTitle() + " | " + earthWallpaper.getFormattedFileName(true, true));
 
-            Intent wallActivity = new Intent(DemoActivity.this, WallpaperActivity.class);
+            Intent wallActivity;
 
             View clickedImageView = view.findViewById(R.id.wall);
             View clickedTextView = view.findViewById(R.id.name);
 
-            wallActivity.putExtra(WallpaperActivity.WALLPAPER_OBJECT, earthWallpaper);
-
             if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+
+                wallActivity = new Intent(DemoActivity.this, WallpaperActivity.class);
+                wallActivity.putExtra(WallpaperActivity.WALLPAPER_OBJECT, earthWallpaper);
 
                 wallActivity.putExtra(WallpaperActivity.IMAGE_TRANSITION_NAME, clickedImageView.getTransitionName());
                 wallActivity.putExtra(WallpaperActivity.TEXT_TRANSITION_NAME, clickedTextView.getTransitionName());
@@ -309,6 +368,8 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                 startActivity(wallActivity, compat.toBundle());
 
             } else {
+                wallActivity = new Intent(DemoActivity.this, WallpaperActivityPre.class);
+                wallActivity.putExtra(WallpaperActivity.WALLPAPER_OBJECT, earthWallpaper);
                 startActivity(wallActivity);
             }
 
@@ -403,7 +464,12 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                                 startActivity(Intent.createChooser(browserIntent, getString(R.string.item_open_via)));
                                 break;
                             case DRAWER_PREFS:
-                                Intent preferences = new Intent(DemoActivity.this, SettingsActivity.class);
+                                Intent preferences;
+                                if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                                    preferences = new Intent(DemoActivity.this, SettingsActivity.class);
+                                }  else {
+                                    preferences = new Intent(DemoActivity.this, SettingsActivityPre.class);
+                                }
                                 startActivity(preferences);
                                 break;
                         }
@@ -460,6 +526,6 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
         loadingButton.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
         earthView.getAllEarthWallpapers(this);
-        recyclerView.addOnScrollListener(connectionScrollListener);
+        if(Build.VERSION.SDK_INT > Build.VERSION_CODES.LOLLIPOP) recyclerView.addOnScrollListener(connectionScrollListener);
     }
 }

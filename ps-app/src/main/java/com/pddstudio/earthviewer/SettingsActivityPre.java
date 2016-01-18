@@ -31,7 +31,7 @@ import com.pddstudio.earthviewer.utils.Preferences;
 
 import java.io.File;
 
-public class SettingsActivity extends AppCompatActivity implements FolderChooserDialog.FolderCallback{
+public class SettingsActivityPre extends AppCompatActivity implements FolderChooserDialog.FolderCallback{
 
     private SettingsItem settingsItem = null;
 

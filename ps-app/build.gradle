@@ -24,8 +24,8 @@ android {
         applicationId "com.pddstudio.earthviewer"
         minSdkVersion 17
         targetSdkVersion 23
-        versionCode 3
-        versionName "0.2.1-BETA"
+        versionCode 4
+        versionName "0.3-BETA"
     }
     buildTypes {
         release {
@@ -82,7 +82,6 @@ dependencies {
     compile 'com.mikepenz:community-material-typeface:1.3.41.1@aar'
     compile 'com.mikepenz:fontawesome-typeface:4.5.0.1@aar'
     compile 'com.github.clans:fab:1.6.2'
-    compile 'com.github.arimorty:floatingsearchview:1.1.2'
     compile 'io.paperdb:paperdb:1.1'
     compile 'com.github.lawloretienne:quickreturn:0.0.3'
     compile 'com.google.android.apps.muzei:muzei-api:2.0'
