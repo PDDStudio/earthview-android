@@ -108,6 +108,7 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
     private static final String SHUFFLE_WALLPAPERS = "load_walls_random";
     private static final String APPLICATION_TYPEFACE = "app_typeface_id";
     private static final String TINT_NAVIGATION_BAR = "tint_nav_bar";
+    private static final String SHOW_EXIT_DIALOG = "show_exit_dialog";
 
     private final AppCompatActivity activity;
     private final Context context;
@@ -392,6 +393,14 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
 
     public void setTempPrefActivity(Activity activity) {
         this.tmpSettings = activity;
+    }
+
+    public void setShowExitDialog(boolean showExitDialog) {
+        sharedPreferences.edit().putBoolean(SHOW_EXIT_DIALOG, showExitDialog).apply();
+    }
+
+    public boolean getShowExitDialog() {
+        return sharedPreferences.getBoolean(SHOW_EXIT_DIALOG, true);
     }
 
 }

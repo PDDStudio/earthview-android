@@ -322,18 +322,25 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
         if(drawer.isDrawerOpen()) {
             drawer.closeDrawer();
         } else {
-            BaseDialog dialog = new BaseDialog(this);
-            dialog.showExitDialog(new BaseDialog.ExitDialogListener() {
-                @Override
-                public void onExitConfirmed(boolean confirmExit) {
-                    if (confirmExit) {
-                        Preferences.getInstance().clearCache();
-                        earthView.cancelAllRunningTasks();
-                        DemoActivity.this.finish();
-                        System.exit(0);
+            if(Preferences.getInstance().getShowExitDialog()) {
+                BaseDialog dialog = new BaseDialog(this);
+                dialog.showExitDialog(new BaseDialog.ExitDialogListener() {
+                    @Override
+                    public void onExitConfirmed(boolean confirmExit) {
+                        if (confirmExit) {
+                            Preferences.getInstance().clearCache();
+                            earthView.cancelAllRunningTasks();
+                            DemoActivity.this.finish();
+                            System.exit(0);
+                        }
                     }
-                }
-            });
+                });
+            } else {
+                Preferences.getInstance().clearCache();
+                earthView.cancelAllRunningTasks();
+                DemoActivity.this.finish();
+                System.exit(0);
+            }
         }
     }
 
@@ -449,7 +456,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
 
         drawer = new DrawerBuilder(this)
                 .withToolbar(toolbar)
-                .withDisplayBelowStatusBar(true)
+                .withDisplayBelowStatusBar(false)
                 .withTranslucentStatusBar(true)
                 .withActionBarDrawerToggle(true)
                 .withActionBarDrawerToggleAnimated(true)

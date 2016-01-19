@@ -151,11 +151,18 @@ public class BaseDialog {
                 .content(R.string.dialog_exit_content)
                 .positiveText(android.R.string.yes)
                 .negativeText(android.R.string.no)
+                .neutralText(R.string.dialog_exit_neutral)
                 .onAny(new MaterialDialog.SingleButtonCallback() {
                     @Override
                     public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {
-                        if(dialogAction.equals(DialogAction.POSITIVE)) exitDialogListener.onExitConfirmed(true);
-                        else if(dialogAction.equals(DialogAction.NEGATIVE)) exitDialogListener.onExitConfirmed(false);
+                        if (dialogAction.equals(DialogAction.POSITIVE))
+                            exitDialogListener.onExitConfirmed(true);
+                        else if (dialogAction.equals(DialogAction.NEGATIVE))
+                            exitDialogListener.onExitConfirmed(false);
+                        else if (dialogAction.equals(DialogAction.NEUTRAL)) {
+                            Preferences.getInstance().setShowExitDialog(false);
+                            exitDialogListener.onExitConfirmed(true);
+                        }
                     }
                 })
                 .show();
