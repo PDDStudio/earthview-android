@@ -104,8 +104,8 @@
     <string name="navigation_section_about">About</string>
     <string name="navigation_item_home">Browse Wallpapers</string>
     <string name="navigation_item_home_desc">Discover the world\'s beauty!</string>
-    <string name="navigation_item_favourites">Favourites</string>
-    <string name="navigation_item_favourites_desc">View your favourite Wallpapers</string>
+    <string name="navigation_item_favourites">Favorites</string>
+    <string name="navigation_item_favourites_desc">View your favorite Wallpapers</string>
     <string name="navigation_item_about">About</string>
     <string name="navigation_item_git">View on GitHub</string>
     <string name="navigation_item_settings">Settings</string>
@@ -123,10 +123,17 @@
     <string name="preferences_item_wall_source_summary">Set whether to use the built-in or the web-api reference list of wallpapers</string>
     <string name="preferences_item_output_dir_title">Wallpaper Export Location</string>
     <string name="preferences_item_output_dir_summary">%wall%</string>
-    <string name="preferences_item_recycler_cells_title">Wallpaper Columns</string>
-    <string name="preferences_item_recycler_cells_summary">Change the amount of columns used to display the wallpapers</string>
     <string name="preferences_item_load_random_title">Load Wallpapers Randomly</string>
     <string name="preferences_item_load_random_summary">Shuffle the Wallpapers each time before loading them (Restart required)</string>
+
+    <string name="preferences_category_interface">Interface</string>
+
+    <string name="preferences_item_recycler_cells_title">Wallpaper Columns</string>
+    <string name="preferences_item_recycler_cells_summary">Change the amount of columns used to display the wallpapers</string>
+    <string name="preferences_item_typeface_title">Application Typeface</string>
+    <string name="preferences_item_typeface_summary">Change the Application\'s typeface (Restart recommended)</string>
+    <string name="preferences_item_tint_navbar_title">Tint Navigation Bar</string>
+    <string name="preferences_item_tint_navbar_summary">Enable tinting of the Navigation Bar (Android 5.0 and higher only)</string>
 
     <string name="preferences_category_caching">Memory Management</string>
 

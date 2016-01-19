@@ -42,14 +42,6 @@
             android:summary="@string/preferences_item_loading_bar_summary"
             android:defaultValue="true" />
 
-        <com.afollestad.materialdialogs.prefs.MaterialListPreference
-            android:key="rc_grid_count"
-            android:title="@string/preferences_item_recycler_cells_title"
-            android:summary="@string/preferences_item_recycler_cells_summary"
-            android:persistent="true"
-            android:entries="@array/pref_columns_count_str"
-            android:entryValues="@array/pref_columns_count_str" />
-
         <CheckBoxPreference
             android:key="load_walls_random"
             android:title="@string/preferences_item_load_random_title"
@@ -60,6 +52,33 @@
             android:key="wall_output_dir"
             android:title="@string/preferences_item_output_dir_title"
             android:summary="@string/preferences_item_output_dir_summary" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/preferences_category_interface">
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:key="rc_grid_count"
+            android:title="@string/preferences_item_recycler_cells_title"
+            android:summary="@string/preferences_item_recycler_cells_summary"
+            android:persistent="true"
+            android:entries="@array/pref_columns_count_str"
+            android:entryValues="@array/pref_columns_count_str" />
+
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:key="app_typeface_id"
+            android:title="@string/preferences_item_typeface_title"
+            android:summary="@string/preferences_item_typeface_summary"
+            android:persistent="true"
+            android:entries="@array/pref_typeface_str"
+            android:entryValues="@array/pref_typeface_id"/>
+
+        <CheckBoxPreference
+            android:key="tint_nav_bar"
+            android:title="@string/preferences_item_tint_navbar_title"
+            android:summary="@string/preferences_item_tint_navbar_summary"
+            android:defaultValue="true" />
 
     </PreferenceCategory>
 

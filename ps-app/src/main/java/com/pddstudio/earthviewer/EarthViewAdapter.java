@@ -71,6 +71,7 @@ public class EarthViewAdapter extends RecyclerView.Adapter<EarthViewAdapter.View
     public void onBindViewHolder(ViewHolder holder, int position) {
         EarthWallpaper earthWallpaper = itemData.get(position);
         holder.textView.setText(earthWallpaper.getFormattedWallpaperTitle());
+        holder.textView.setTypeface(Preferences.getInstance().getTypeface());
         if(Preferences.getInstance().getGridColumnCount() >= 4) holder.textView.setVisibility(View.GONE);
 
         if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {

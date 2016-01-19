@@ -19,6 +19,7 @@ package com.pddstudio.earthviewer;
 import android.Manifest;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
@@ -106,6 +107,15 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             }
         }
 
+        //tint the navigation bar if set
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if(Preferences.getInstance().getTintNavigationBar()) {
+                getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+            } else {
+                getWindow().setNavigationBarColor(Color.BLACK);
+            }
+        }
+
         if(Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             setContentView(R.layout.activity_demo_pre);
             preparePreLollipop();
@@ -114,7 +124,9 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
             prepareLollipop();
         }
 
+        setTypefaces();
     }
+
 
     private void prepareLollipop() {
         Log.d("DemoActivity", "testing current active network connection... User is on Wifi? : " + Preferences.getInstance().isOnWiFi());
@@ -156,6 +168,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
         footerLayout.setVisibility(View.GONE);
         footerLoadingText = (TextView) findViewById(R.id.progress_text);
         footerLoadingText.setText(R.string.quick_return_loading_text);
+        footerLoadingText.setTypeface(Preferences.getInstance().getTypeface());
 
         footerButton = (Button) findViewById(R.id.footer_cancel_btn);
         footerButton.setOnClickListener(new View.OnClickListener() {
@@ -203,6 +216,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                 new BaseDialog(this).showNoWifiConnectionDialog(this);
             }
         }
+
     }
 
     private void preparePreLollipop() {
@@ -265,6 +279,12 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
 
     }
 
+    private void setTypefaces() {
+        ((TextView) findViewById(R.id.info_text)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.info_text_content)).setTypeface(Preferences.getInstance().getTypeface());
+        ((Button) findViewById(R.id.info_start_loading_bt)).setTypeface(Preferences.getInstance().getTypeface());
+    }
+
     @Override
     protected void onResume() {
         super.onResume();
@@ -277,6 +297,15 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
                     recyclerView.setAdapter(earthViewAdapter);
                 }
             }
+            //tint the navigation bar if set
+            if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                if(Preferences.getInstance().getTintNavigationBar()) {
+                    getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+                } else {
+                    getWindow().setNavigationBarColor(Color.BLACK);
+                }
+            }
+            setTypefaces();
         }
     }
 
@@ -401,21 +430,21 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     private void setUpNavigationDrawer() {
         ArrayList<IDrawerItem> drawerItems = new ArrayList<>();
         //creating and adding the items to the drawer
-        SectionDrawerItem wallSection = new SectionDrawerItem().withName(R.string.navigation_section_wallpaper).withDivider(false);
+        SectionDrawerItem wallSection = new SectionDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withName(R.string.navigation_section_wallpaper).withDivider(false);
         drawerItems.add(wallSection);
-        PrimaryDrawerItem homeItem = new PrimaryDrawerItem().withIdentifier(DRAWER_HOME).withName(R.string.navigation_item_home).withDescription(R.string.navigation_item_home_desc).withIcon(CommunityMaterial.Icon.cmd_terrain).withSetSelected(true);
+        PrimaryDrawerItem homeItem = new PrimaryDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withIdentifier(DRAWER_HOME).withName(R.string.navigation_item_home).withDescription(R.string.navigation_item_home_desc).withIcon(CommunityMaterial.Icon.cmd_terrain).withSetSelected(true);
         drawerItems.add(homeItem);
-        PrimaryDrawerItem favItem = new PrimaryDrawerItem().withIdentifier(DRAWER_FAV).withName(R.string.navigation_item_favourites).withDescription(R.string.navigation_item_favourites_desc).withIcon(CommunityMaterial.Icon.cmd_heart).withSelectable(false);
+        PrimaryDrawerItem favItem = new PrimaryDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withIdentifier(DRAWER_FAV).withName(R.string.navigation_item_favourites).withDescription(R.string.navigation_item_favourites_desc).withIcon(CommunityMaterial.Icon.cmd_heart).withSelectable(false);
         drawerItems.add(favItem);
-        SectionDrawerItem aboutSection = new SectionDrawerItem().withName(R.string.navigation_section_about);
+        SectionDrawerItem aboutSection = new SectionDrawerItem().withName(R.string.navigation_section_about).withTypeface(Preferences.getInstance().getTypeface());
         drawerItems.add(aboutSection);
-        PrimaryDrawerItem gitItem = new PrimaryDrawerItem().withIdentifier(DRAWER_GIT).withName(R.string.navigation_item_git).withIcon(CommunityMaterial.Icon.cmd_github_circle).withSelectable(false);
+        PrimaryDrawerItem gitItem = new PrimaryDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withIdentifier(DRAWER_GIT).withName(R.string.navigation_item_git).withIcon(CommunityMaterial.Icon.cmd_github_circle).withSelectable(false);
         drawerItems.add(gitItem);
-        PrimaryDrawerItem aboutItem = new PrimaryDrawerItem().withIdentifier(DRAWER_ABOUT).withName(R.string.navigation_item_about).withIcon(CommunityMaterial.Icon.cmd_information_outline).withSelectable(false);
+        PrimaryDrawerItem aboutItem = new PrimaryDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withIdentifier(DRAWER_ABOUT).withName(R.string.navigation_item_about).withIcon(CommunityMaterial.Icon.cmd_information_outline).withSelectable(false);
         drawerItems.add(aboutItem);
         DividerDrawerItem dividerDrawerItem = new DividerDrawerItem();
         drawerItems.add(dividerDrawerItem);
-        PrimaryDrawerItem settingsItem = new PrimaryDrawerItem().withIdentifier(DRAWER_PREFS).withName(R.string.navigation_item_settings).withIcon(CommunityMaterial.Icon.cmd_settings).withSelectable(false);
+        PrimaryDrawerItem settingsItem = new PrimaryDrawerItem().withTypeface(Preferences.getInstance().getTypeface()).withIdentifier(DRAWER_PREFS).withName(R.string.navigation_item_settings).withIcon(CommunityMaterial.Icon.cmd_settings).withSelectable(false);
         drawerItems.add(settingsItem);
 
         drawer = new DrawerBuilder(this)

@@ -42,6 +42,20 @@
         <item>5 Column(s)</item>
     </string-array>
 
+    <string-array name="pref_typeface_id">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="pref_typeface_str">
+        <item>Roboto (Default)</item>
+        <item>Roboto Mono</item>
+        <item>Roboto Slab</item>
+        <item>Open Sans</item>
+    </string-array>
+
     <string-array name="pref_cache_mode">
         <item>Only cache Thumbnails</item>
         <item>Cache entire Wallpaper</item>

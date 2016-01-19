@@ -275,6 +275,38 @@ public class WallpaperActivity extends AppCompatActivity implements Preferences.
         //EarthView.withGoogle().getEarthWallpaper(earthWallpaper.getWallpaperId(), this);
         new DownloadHighResImage(this, earthWallpaper, this).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR);
 
+        //apply the typefaces
+        setTypefaces();
+
+        //tint the navigation bar if set
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if(Preferences.getInstance().getTintNavigationBar()) {
+                getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+            } else {
+                getWindow().setNavigationBarColor(Color.BLACK);
+            }
+        }
+
+    }
+
+    private void setTypefaces() {
+        collapsingToolbarLayout.setCollapsedTitleTypeface(Preferences.getInstance().getTypeface());
+        collapsingToolbarLayout.setExpandedTitleTypeface(Preferences.getInstance().getTypeface());
+        TextView detailsTitle = (TextView) findViewById(R.id.details_text_details);
+        detailsTitle.setTypeface(Preferences.getInstance().getTypeface());
+        cityTextView.setTypeface(Preferences.getInstance().getTypeface());
+        countryTextView.setTypeface(Preferences.getInstance().getTypeface());
+        coordinatesTextView.setTypeface(Preferences.getInstance().getTypeface());
+        googleMapsHintTextView.setTypeface(Preferences.getInstance().getTypeface());
+        attributionTextView.setTypeface(Preferences.getInstance().getTypeface());
+        shareLinkTextView.setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_text_region)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_country_title)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_coords_title)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_gmaps_link_icon_title)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_others_title)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_attribution_title)).setTypeface(Preferences.getInstance().getTypeface());
+        ((TextView) findViewById(R.id.details_share_link_title)).setTypeface(Preferences.getInstance().getTypeface());
     }
 
     @Override

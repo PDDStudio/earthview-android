@@ -17,6 +17,7 @@
 package com.pddstudio.earthviewer;
 
 
+import android.graphics.Color;
 import android.os.Build;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -45,6 +46,17 @@ public class SettingsActivity extends AppCompatActivity implements FolderChooser
 
         if(getFragmentManager().findFragmentById(R.id.pref_content) == null)
             getFragmentManager().beginTransaction().replace(R.id.pref_content, new SettingsFragment()).commit();
+
+        //tint the navigation bar if set
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if(Preferences.getInstance().getTintNavigationBar()) {
+                getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+            } else {
+                getWindow().setNavigationBarColor(Color.BLACK);
+            }
+        }
+
+        Preferences.getInstance().setTempPrefActivity(this);
 
     }
 

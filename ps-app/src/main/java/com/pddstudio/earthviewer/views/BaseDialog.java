@@ -55,7 +55,10 @@ public class BaseDialog {
 
     public BaseDialog(Context context) {
         this.context = context;
-        this.dialog = new MaterialDialog.Builder(context).titleColorRes(R.color.colorPrimary).build();
+        this.dialog = new MaterialDialog.Builder(context)
+                .titleColorRes(R.color.colorPrimary)
+                .typeface(Preferences.getInstance().getTypeface(), Preferences.getInstance().getTypeface())
+                .build();
     }
 
     public BaseDialog withDetails(AppCompatActivity appCompatActivity, Preferences.PermissionCallback permissionCallback) {
@@ -192,6 +195,7 @@ public class BaseDialog {
                     .content(R.string.dialog_cancel_loading_content)
                     .positiveText(R.string.dialog_loading_cancel_confirm)
                     .negativeText(R.string.dialog_loading_cancel_abort)
+                    .typeface(Preferences.getInstance().getTypeface(), Preferences.getInstance().getTypeface())
                     .onPositive(new MaterialDialog.SingleButtonCallback() {
                         @Override
                         public void onClick(MaterialDialog materialDialog, DialogAction dialogAction) {

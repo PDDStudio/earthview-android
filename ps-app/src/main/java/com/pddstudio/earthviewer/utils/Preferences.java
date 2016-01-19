@@ -17,9 +17,12 @@
 package com.pddstudio.earthviewer.utils;
 
 import android.Manifest;
+import android.app.Activity;
 import android.content.Context;
 import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.os.Build;
@@ -31,6 +34,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 
 import com.pddstudio.earthview.EarthWallpaper;
+import com.pddstudio.earthviewer.R;
 
 import org.apache.commons.io.FileUtils;
 
@@ -75,6 +79,14 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
 
         } else if(key.equals(CACHING_MODE)) {
 
+        } else if(key.equals(TINT_NAVIGATION_BAR)) {
+            if(tmpSettings != null && tmpSettings.getWindow() != null && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                if(getTintNavigationBar()) {
+                    tmpSettings.getWindow().setNavigationBarColor(context.getResources().getColor(R.color.colorPrimaryDark));
+                } else {
+                    tmpSettings.getWindow().setNavigationBarColor(Color.BLACK);
+                }
+            }
         }
     }
 
@@ -94,6 +106,8 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
     private static final String FAVORITES_IDS = "wall_favs_ids";
     private static final String AUTO_LOAD_WIFI = "auto_load_wifi";
     private static final String SHUFFLE_WALLPAPERS = "load_walls_random";
+    private static final String APPLICATION_TYPEFACE = "app_typeface_id";
+    private static final String TINT_NAVIGATION_BAR = "tint_nav_bar";
 
     private final AppCompatActivity activity;
     private final Context context;
@@ -105,6 +119,8 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
     private boolean canAccessStorage = false;
     private boolean canAccessInternet = false;
     private boolean canAccessNetwork = false;
+
+    private Activity tmpSettings;
 
     private Preferences(Context context) {
         //this.sharedPreferences = context.getSharedPreferences(PREFERENCES, Context.MODE_PRIVATE);
@@ -347,6 +363,35 @@ public class Preferences implements SharedPreferences.OnSharedPreferenceChangeLi
 
     public void removeFavorite(EarthWallpaper earthWallpaper) {
         Favorites.getFavorites(context).removeFavorite(earthWallpaper);
+    }
+
+    public Typeface getTypeface() {
+        String typeface = sharedPreferences.getString(APPLICATION_TYPEFACE, "1");
+        Typeface typefaceModel;
+        switch (typeface) {
+            default:
+            case "1":
+                typefaceModel = Typeface.createFromAsset(context.getAssets(), "fonts/Roboto-Regular.ttf");
+                break;
+            case "2":
+                typefaceModel = Typeface.createFromAsset(context.getAssets(), "fonts/RobotoMono-Regular.ttf");
+                break;
+            case "3":
+                typefaceModel = Typeface.createFromAsset(context.getAssets(), "fonts/RobotoSlab-Regular.ttf");
+                break;
+            case "4":
+                typefaceModel = Typeface.createFromAsset(context.getAssets(), "fonts/OpenSans-Regular.ttf");
+                break;
+        }
+        return typefaceModel;
+    }
+
+    public boolean getTintNavigationBar() {
+        return sharedPreferences.getBoolean(TINT_NAVIGATION_BAR, true);
+    }
+
+    public void setTempPrefActivity(Activity activity) {
+        this.tmpSettings = activity;
     }
 
 }

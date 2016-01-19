@@ -17,6 +17,7 @@
 package com.pddstudio.earthviewer;
 
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Build;
 import android.support.v4.app.ActivityOptionsCompat;
 import android.support.v4.util.Pair;
@@ -70,6 +71,14 @@ public class FavoritesActivity extends AppCompatActivity {
             showEmptyFavorites();
         }
 
+        //tint the navigation bar if set
+        if(Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            if(Preferences.getInstance().getTintNavigationBar()) {
+                getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimaryDark));
+            } else {
+                getWindow().setNavigationBarColor(Color.BLACK);
+            }
+        }
     }
 
     @Override

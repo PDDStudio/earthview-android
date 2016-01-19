@@ -34,6 +34,7 @@
         android:orientation="vertical">
 
         <TextView
+            android:id="@+id/details_text_details"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="4dp"
@@ -74,6 +75,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_text_region"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/details_city_title"
@@ -131,6 +133,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_country_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/details_country_title"
@@ -188,6 +191,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_coords_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/details_coords_title"
@@ -246,6 +250,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_gmaps_link_icon_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/open_in_google_maps"
@@ -266,6 +271,7 @@
         </RelativeLayout>
 
         <TextView
+            android:id="@+id/details_others_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
@@ -308,6 +314,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_attribution_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/details_attribution_title"
@@ -367,6 +374,7 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/details_share_link_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="@string/details_share_link_title"
