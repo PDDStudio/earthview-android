@@ -39,6 +39,7 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import com.crashlytics.android.Crashlytics;
 import com.etiennelawlor.quickreturn.library.enums.QuickReturnViewType;
 import com.etiennelawlor.quickreturn.library.listeners.QuickReturnRecyclerViewOnScrollListener;
 import com.mikepenz.aboutlibraries.LibTaskExecutor;
@@ -57,6 +58,7 @@ import com.pddstudio.earthview.EarthWallpaper;
 import com.pddstudio.earthviewer.utils.Preferences;
 import com.pddstudio.earthviewer.views.BaseDialog;
 
+import io.fabric.sdk.android.Fabric;
 import java.util.ArrayList;
 import java.util.Collection;
 
@@ -97,6 +99,7 @@ public class DemoActivity extends AppCompatActivity implements Preferences.Permi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Fabric.with(this, new Crashlytics());
 
         if(!Preferences.exists()) {
             //init the preferences

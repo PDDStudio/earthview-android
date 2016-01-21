@@ -1,3 +1,12 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
 /*
  * Copyright 2015 - Patrick J - ps-app
  *
@@ -15,6 +24,12 @@
  */
 
 apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
 
 android {
     compileSdkVersion 23
@@ -24,8 +39,8 @@ android {
         applicationId "com.pddstudio.earthviewer"
         minSdkVersion 17
         targetSdkVersion 23
-        versionCode 7
-        versionName "0.5.5-BETA"
+        versionCode 8
+        versionName "0.5.6-BETA"
     }
     buildTypes {
         release {
@@ -87,5 +102,8 @@ dependencies {
     compile 'com.google.android.apps.muzei:muzei-api:2.0'
     //compile 'com.lantouzi.wheelview:library:1.0.1'
     compile project(':wheelview-test')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
 
 }
