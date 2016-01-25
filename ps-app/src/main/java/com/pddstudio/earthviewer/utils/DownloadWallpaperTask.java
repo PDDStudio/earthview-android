@@ -88,7 +88,8 @@ public class DownloadWallpaperTask extends AsyncTask<Boolean, Void, File> {
 
     @Override
     public void onPostExecute(File downloadedFile) {
-        downloadCallback.onDownloadFinished(downloadedFile.exists(), downloadedFile);
+        if(downloadedFile != null) downloadCallback.onDownloadFinished(downloadedFile.exists(), downloadedFile);
+        else downloadCallback.onDownloadFinished(false, null);
     }
 
 }

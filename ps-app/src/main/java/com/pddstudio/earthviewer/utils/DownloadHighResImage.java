@@ -82,7 +82,8 @@ public class DownloadHighResImage extends AsyncTask<Void, Void, File> {
 
     @Override
     public void onPostExecute(File cachedImage) {
-        imageCachingCallback.onCachingFinished(cachedImage.exists(), cachedImage);
+        if(cachedImage != null) imageCachingCallback.onCachingFinished(cachedImage.exists(), cachedImage);
+        else imageCachingCallback.onCachingFinished(false, null);
     }
 
 }
