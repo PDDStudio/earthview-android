@@ -39,8 +39,8 @@ android {
         applicationId "com.pddstudio.earthviewer"
         minSdkVersion 17
         targetSdkVersion 23
-        versionCode 9
-        versionName "0.5.7-BETA"
+        versionCode 10
+        versionName "0.6.0-BETA"
     }
     buildTypes {
         release {

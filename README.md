@@ -12,7 +12,10 @@ In case you want to install the Application, feel free to do so! **It's on Googl
 
 [![](https://github.com/PDDStudio/earthview-android/blob/master/preview/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer)
 
-###Screenshot
+###!! Translators needed !!
+You can help translating EarthViewer into your native language via OneSkyApp: [Contribute to EarthViewer](http://goo.gl/z4218r)
+
+###Advanced Demo Screenshot
 ![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
 ###Simple Demo Application
 You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk).
