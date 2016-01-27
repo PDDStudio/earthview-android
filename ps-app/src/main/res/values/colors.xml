@@ -16,9 +16,9 @@
   -->
 
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#4499f6</color>
+    <color name="colorPrimaryDark">#1976D2</color>
+    <color name="colorAccent">#84C142</color>
     <color name="activityBackgroundColor">#FAFAFA</color>
     <color name="cardViewBackgroundColor">#FFFFFF</color>
     <!-- colors used by misc items -->
