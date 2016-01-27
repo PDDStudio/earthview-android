@@ -1,0 +1,173 @@
+<!--
+  ~ Copyright 2015 - Patrick J - ps-app
+  ~
+  ~ Licensed under the Apache License, Version 2.0 (the "License");
+  ~ you may not use this file except in compliance with the License.
+  ~ You may obtain a copy of the License at
+  ~
+  ~    http://www.apache.org/licenses/LICENSE-2.0
+  ~
+  ~ Unless required by applicable law or agreed to in writing, software
+  ~ distributed under the License is distributed on an "AS IS" BASIS,
+  ~ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  ~ See the License for the specific language governing permissions and
+  ~ limitations under the License.
+
+     French translation by Kevin Minions
+  -->
+
+<resources>
+    <string name="app_name">EarthViewer</string>
+    <string name="app_bar_title">EarthViewer Beta</string>
+    <string name="app_bar_sub_title">Bibliothèque Android pour EarthView de Google</string>
+    <string name="title_activity_demo">DemoActivity</string>
+    <string name="info_text_title">EarthViewer [Beta]</string>
+    <string name="info_text_content">Application de démonstration pour les fonds d\'écran\n\"EarthView with Google\"</string>
+    <string name="info_load_walls_btn_text">Télécharger les fonds d\'écran</string>
+    <string name="info_no_wifi_connection_title">Aucune connexion Wi-Fi détectée !</string>
+    <string name="info_no_wifi_connection_subtitle">Il est fortement recommandé de se connecter à un réseau Wi-Fi !</string>
+    <string name="title_activity_wallpaper">WallpaperActivity</string>
+    <string name="wall_details_transition_name">wallpaper_details_transition</string>
+    <!-- strings for the about activity -->
+    <string name="about_activity_title">À propos de EarthViewer</string>
+    <!-- strings for the details activity -->
+    <string name="details_content_header">Détails</string>
+    <string name="details_gmaps_header">Google Maps</string>
+    <string name="details_city_title">Région</string>
+    <string name="details_country_title">Pays</string>
+    <string name="details_coords_title">Coordonnées</string>
+    <string name="open_in_google_maps">Google Maps</string>
+    <string name="details_attribution_title">Crédits</string>
+    <string name="details_share_link_title">Ouvrir dans le navigateur Internet</string>
+    <!-- social and sharing strings -->
+    <string name="item_share_title">Découvre cette incroyable Vue de la Terre !\n</string>
+    <string name="item_share_via">Partager cette Vue de la Terre avec…</string>
+    <string name="item_open_via">Ouvrir avec…</string>
+    <!-- misc other strings -->
+    <string name="details_unknown">Inconnu</string>
+    <string name="details_misc_header">Autres</string>
+    <string name="cancel">Annuler</string>
+    <!-- fab strings -->
+    <string name="fab_menu_item_share">Partager cette Vue de la Terre</string>
+    <string name="fab_menu_item_archive">Ajouter aux favoris</string>
+    <string name="fab_menu_item_remove_archive">Supprimer des favoris</string>
+    <string name="fab_menu_item_apply">Définir en tant que fond d\'écran</string>
+    <string name="fab_menu_item_download">Télécharger</string>
+    <!-- snackbar info strings -->
+    <string name="fab_snack_bar_fav_added">Fond d\'écran ajouté aux favoris !</string>
+    <string name="fab_snack_bar_fav_removed">Fond d\'écran supprimé des favoris !</string>
+    <string name="fab_snack_bar_fav_action">OK</string>
+    <string name="fab_snack_bar_image_not_cached">Impossible de définir l\'image en tant que fond d\'écran !</string>
+    <string name="snack_bar_perm_denied">Impossible de télécharger le fond d\'écran sans autorisation de stockage !</string>
+    <string name="snack_bar_perm_denied_action">Nouvelle demande</string>
+    <string name="snack_bar_loading_complete">Tous les fonds d\'écran sont chargés !</string>
+    <string name="snack_bar_loading_cancel_confirmed">Téléchargement des fonds d\'écran annulé.</string>
+    <string name="snack_bar_loading_cancel_confirmed_action">Annuler</string>
+    <!-- quick return bar strings -->
+    <string name="quick_return_loading_text">Téléchargement en cours…</string>
+    <!-- dialog strings -->
+    <string name="dialog_cancel_loading_title">Annuler le téléchargement des fonds d\'écran ?</string>
+    <string name="dialog_cancel_loading_content">Cela va arrêter le téléchargement des fonds d\'écran en attente. Êtes-vous sûr de vouloir annuler toutes les opérations en cours d\'exécution ?</string>
+
+    <string name="dialog_no_wifi_title">Avertissement : Utilisation du réseau mobile !</string>
+    <string name="dialog_no_wifi_content">
+        <![CDATA[L\'appareil ne semble pas être connecté à un réseau Wi-Fi ! <b>Il est fortement recommandé de se connecter à un réseau Wi-Fi</b> avant de continuer le téléchargement des fonds d\'écran.<br />EarthViewer va télécharger près de <b>1 500</b> fonds d\'écran !]]>
+    </string>
+    <string name="dialog_no_wifi_positive">Télécharger quand même !</string>
+    <string name="dialog_no_wifi_negative">Arrêter le téléchargement</string>
+
+    <string name="dialog_perm_storage_title">Autorisation nécessaire !</string>
+    <string name="dialog_perm_storage_content">Vous devez d\'abord accorder l\'autorisation de stockage à cette application avant de pouvoir télécharger ce fond d\'écran.</string>
+
+    <string name="dialog_perm_internet_title">Autorisation nécessaire !</string>
+    <string name="dialog_perm_internet_content">Vous devez d\'abord accorder l\'autorisation d\'accès à Internet à cette application avant de pouvoir télécharger les fonds d\'écran EarthView.</string>
+
+    <string name="dialog_perm_network_connection_title">Autorisation nécessaire !</string>
+    <string name="dialog_perm_network_connection_content">EarthView de Google est une collection de plus de 1 500 fonds d\'écran ! Pour éviter une énorme consommation des données Internet lorsque l\'appareil n\'est pas connecté à un réseau Wi-Fi cette application nécessite l\'autorisation d\'accès réseau.</string>
+
+    <string name="dialog_perm_btn_request_again">OK</string>
+    <string name="dialog_perm_btn_request_cancel">Annuler</string>
+
+    <string name="dialog_loading_cancel_confirm">Oui</string>
+    <string name="dialog_loading_cancel_abort">Continuer</string>
+
+    <string name="dialog_download_title">Téléchargement en cours…</string>
+    <string name="dialog_download_content">Veuillez patienter !</string>
+    <string name="dialog_download_finished_title_success">Téléchargement terminé !</string>
+    <string name="dialog_download_finished_title_error">Erreur de téléchargement !</string>
+    <string name="dialog_download_finished_content_success">Fond d\'écran téléchargé dans :\n</string>
+    <string name="dialog_download_finished_content_error">Une erreur est survenue en essayant de télécharger ce fond d\'écran ! Vérifiez votre connexion Internet et essayez à nouveau.</string>
+
+    <string name="dialog_exit_title">Fermer EarthViewer Beta</string>
+    <string name="dialog_exit_content">Cela va annuler toutes les tâches en cours d\'exécution (s\'il y en a).\nVoulez-vous fermer l\'application ?</string>
+    <string name="dialog_exit_neutral">Ne plus afficher</string>
+
+    <!-- navigation drawer strings -->
+    <string name="navigation_section_wallpaper">EarthView de Google</string>
+    <string name="navigation_section_about">À propos</string>
+    <string name="navigation_item_home">Parcourir les fonds d\'écran</string>
+    <string name="navigation_item_home_desc">Découvrez la beauté du monde !</string>
+    <string name="navigation_item_favourites">Favoris</string>
+    <string name="navigation_item_favourites_desc">Afficher vos fonds d\'écran préférés</string>
+    <string name="navigation_item_about">À propos</string>
+    <string name="navigation_item_git">Afficher sur GitHub</string>
+    <string name="navigation_item_settings">Paramètres</string>
+
+    <!-- preference strings -->
+    <string name="preferences_category_general">Général</string>
+
+    <string name="preferences_item_data_saver_title">Économiser les données mobiles</string>
+    <string name="preferences_item_data_saver_summary">Empêche le téléchargement ou la mise en cache d\'une énorme quantité d\'images en cas d\'absence de connexion Wi-Fi</string>
+    <string name="preferences_item_auto_load_title">Télécharger automatiquement les images en Wi-Fi</string>
+    <string name="preferences_item_auto_load_summary">En cas de connexion Wi-Fi, les images se téléchargeront automatiquement</string>
+    <string name="preferences_item_loading_bar_title">Afficher la barre de téléchargement</string>
+    <string name="preferences_item_loading_bar_summary">Activer/Désactiver la barre de téléchargement lors du téléchargement des fonds d\'écran</string>
+    <string name="preferences_item_wall_source_title">Source des fonds d\'écran</string>
+    <string name="preferences_item_wall_source_summary">Choisir entre la liste des fonds d\'écran inclue dans l\'application ou celle de l\'API Internet</string>
+    <string name="preferences_item_output_dir_title">Emplacement de stockage des fonds d\'écran</string>
+    <string name="preferences_item_output_dir_summary">%wall%</string>
+    <string name="preferences_item_load_random_title">Charger les fonds d\'écran aléatoirement</string>
+    <string name="preferences_item_load_random_summary">Mélanger la disposition des fonds d\'écran à chaque ouverture de l\'application avant de les charger (Redémarrage nécessaire)</string>
+
+    <string name="preferences_category_interface">Interface</string>
+
+    <string name="preferences_item_recycler_cells_title">Nombre de colonnes</string>
+    <string name="preferences_item_recycler_cells_summary">Modifier le nombre de colonnes utilisées pour afficher les fonds d\'écran</string>
+    <string name="preferences_item_typeface_title">Police de l\'application</string>
+    <string name="preferences_item_typeface_summary">Modifier la police de caractères de l\'application (Redémarrage recommandé)</string>
+    <string name="preferences_item_tint_navbar_title">Barre de navigation teintée</string>
+    <string name="preferences_item_tint_navbar_summary">Activer la barre de navigation teintée (Version d\'Android 5.0 et supérieure uniquement)</string>
+
+    <string name="preferences_category_caching">Gestion de la mémoire</string>
+
+    <string name="preferences_item_cache_lifecycle_title">Mémoire cache</string>
+    <string name="preferences_item_cache_lifecycle_summary">Gérer la durée de vie du contenu mis en cache</string>
+
+    <string name="preferences_item_cache_mode_title">Mode de mise en cache</string>
+    <string name="preferences_item_cache_mode_summary">Choisir le type de mise en cache pour réduire le temps de chargement des fonds d\'écran</string>
+
+    <string name="preferences_item_clear_cache_title">Vider le cache</string>
+    <string name="preferences_item_clear_cache_summary">Supprimer tous les fichiers stockés dans le répertoire \"cache\" de l\'application. Taille du répertoire : %s</string>
+
+    <string name="preferences_item_clear_internal_title">Vider le stockage local</string>
+    <string name="preferences_item_clear_internal_summary">Supprimer tous les fichiers stockés dans le répertoire \"fichier\" de l\'application. Taille du répertoire : %s</string>
+
+    <string name="preferences_category_other">Information de compilation</string>
+
+    <string name="preferences_item_build_title">Version de compilation</string>
+
+    <string name="title_activity_settings">Paramètres</string>
+    <string name="title_activity_about">AboutActivity</string>
+    <string name="title_activity_favorites">Favoris</string>
+    <string name="empty_favorites_title">Aucun favori n\'est encore défini</string>
+
+    <!-- Muzei related strings -->
+    <string name="muzei_settings_dialog_title">Paramètres Muzei pour EarthViewer</string>
+    <string name="muzei_settings_dialog_text_minutes">Définir l\'intervalle de changement de fonds d\'écran en minute(s)</string>
+    <string name="muzei_settings_dialog_text_hours">Définir l\'intervalle de changement de fonds d\'écran en heure(s)</string>
+    <string name="muzei_settings_dialog_checkbox">Utiliser les heures plutôt que les minutes</string>
+    <string name="muzei_settings_dialog_btn_positve">Apply</string>
+    <string name="muzei_settings_dialog_btn_negative">Appliquer</string>
+
+
+</resources>
