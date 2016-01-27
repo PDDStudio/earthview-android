@@ -85,7 +85,10 @@ public class SettingsActivityPre extends AppCompatActivity implements FolderChoo
 
     public void showDirectoryChooserDialog(SettingsItem settingsItemCallback) {
         this.settingsItem = settingsItemCallback;
-        new FolderChooserDialog.Builder(this).show();
+        new FolderChooserDialog.Builder(this)
+                .chooseButton(R.string.preferences_item_wall_folder_select)
+                .cancelButton(R.string.preferences_item_wall_folder_cancel)
+                .show();
     }
 
     //using the PreferenceFragment for the Settings

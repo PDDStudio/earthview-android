@@ -122,6 +122,8 @@
     <string name="preferences_item_loading_bar_summary">Enable/Disable the Loading Bar when loading Wallpapers</string>
     <string name="preferences_item_wall_source_title">Wallpaper Source</string>
     <string name="preferences_item_wall_source_summary">Set whether to use the built-in or the web-api reference list of wallpapers</string>
+    <string name="preferences_item_wall_folder_select">Choose</string>
+    <string name="preferences_item_wall_folder_cancel">Cancel</string>
     <string name="preferences_item_output_dir_title">Wallpaper Export Location</string>
     <string name="preferences_item_output_dir_summary">%wall%</string>
     <string name="preferences_item_load_random_title">Load Wallpapers Randomly</string>
@@ -166,6 +168,8 @@
     <string name="muzei_settings_dialog_checkbox">Use hours instead of minutes</string>
     <string name="muzei_settings_dialog_btn_positve">Apply</string>
     <string name="muzei_settings_dialog_btn_negative">Cancel</string>
+    <string name="muzei_settings_dialog_postfix_min">%s Minutes</string>
+    <string name="muzei_settings_dialog_postfix_hours">%s Hours</string>
 
 
 </resources>

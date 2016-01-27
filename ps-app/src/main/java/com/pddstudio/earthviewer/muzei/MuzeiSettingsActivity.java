@@ -103,11 +103,11 @@ public class MuzeiSettingsActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (checkBox.isChecked()) {
                     textView.setText(R.string.muzei_settings_dialog_text_hours);
-                    wheelView.setAdditionCenterMark(" Hours");
+                    wheelView.setAdditionCenterMark(getString(R.string.muzei_settings_dialog_postfix_hours, " "));
                     wheelView.selectIndex(wheelView.getSelectedPosition());
                 } else {
                     textView.setText(R.string.muzei_settings_dialog_text_minutes);
-                    wheelView.setAdditionCenterMark(" Minutes");
+                    wheelView.setAdditionCenterMark(getString(R.string.muzei_settings_dialog_postfix_min, " "));
                     wheelView.selectIndex(wheelView.getSelectedPosition());
                 }
             }
