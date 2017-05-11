@@ -1,31 +1,31 @@
-#EarthView Android Library
+# EarthView Android Library
 A simple and easy to use API to integrate [EarthView with Google](http://earthview.withgoogle.com) into your android application.
 
 [![Android Arsenal](https://img.shields.io/badge/Android%20Arsenal-earthview--android-green.svg?style=true)](https://android-arsenal.com/details/1/2902)
 [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.pddstudio/earthview-android)
 
-##Showcase
-###Advanced Demo Application (Beta)
+## Showcase
+### Advanced Demo Application (Beta)
 To showcase the different possibilities of this library I've created a demo 'Wallpaper Application'.
 You can find the source for this application in the `ps-app/` folder.
 In case you want to install the Application, feel free to do so! **It's on Google Play™**
 
 [![](https://github.com/PDDStudio/earthview-android/blob/master/preview/en-play-badge.png)](https://play.google.com/store/apps/details?id=com.pddstudio.earthviewer)
 
-###!! Translators needed !!
+### !! Translators needed !!
 You can help translating EarthViewer into your native language via OneSkyApp: [Contribute to EarthViewer](http://goo.gl/z4218r)
 
-###Advanced Demo Screenshot
+### Advanced Demo Screenshot
 ![ ](https://github.com/PDDStudio/earthview-android/blob/master/preview/screenshot.png)
-###Simple Demo Application
+### Simple Demo Application
 You can find a simple demo application in the `app/` folder which you can also download [here](https://github.com/PDDStudio/earthview-android/raw/master/app-debug.apk).
 
-##Getting Started
+## Getting Started
 Include the library into your project by adding the following line to your ```build.gradle```:
 ```compile 'com.pddstudio:earthview-android:[VERSION]'```
 **Note:** *To make sure you're using the latest version, take a look at the maven badge above*
 
-##Usage
+## Usage
  - Implement either `SingleEarthViewCallback` (for a single EarthView) or `EarthViewCallback` (for multiple EarthViews) into your Activity, Adapter or any other class where you want to load the EarthView's.
 - Get an instance of the EarthView by calling:
 ```java
@@ -33,7 +33,7 @@ EarthView.withGoogle()
 ```
 - Fire the event which fit's your needs, you'll get the results through the callback interface you provide in your project.
 
-###Fetching a single EarthView
+### Fetching a single EarthView
 
 A quick sample to fetch a single EarthView
 
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity implements SingleEarthViewCa
 }
 ```
 
-###Fetching multiple EarthViews
+### Fetching multiple EarthViews
 
 A quick sample to load multiple EarthViews:
 
@@ -123,7 +123,7 @@ public class MainActivity extends AppCompatActivity implements EarthViewCallback
 }
 ```
 
-##The EarthWallpaper reference sheet
+## The EarthWallpaper reference sheet
 Once you received an EarthWallpaper object through the callback you can get the following information out of it:
 - The EarthView's ID (identifier - similar to the original one)
 - The EarthView's Slug
@@ -143,25 +143,25 @@ Once you received an EarthWallpaper object through the callback you can get the 
 All information can be fetched via their get-Methods.
 You can find more information in the EarthView JavaDoc.
 
-##Dependencies (Library)
+## Dependencies (Library)
 - [Gson](https://github.com/google/gson)
 - [Apache Commons IO](https://commons.apache.org/proper/commons-io/)
 - [OkHttp](http://square.github.io/okhttp/)
 
-##Dependencies (Simple Demo Application)
+## Dependencies (Simple Demo Application)
 - [Picasso](http://square.github.io/picasso/)
 
 **Note:** *Dependencies for the Advanced Demo can be found inside the application*
 
-##About & Contact
+## About & Contact
 - In case you've a question feel free to hit me up via E-Mail (patrick.pddstudio@googlemail.com) 
 - or [Google+](http://plus.google.com/+PatrickJung42)
 
-##Contributors
+## Contributors
 *A special thanks goes to everyone who contributed to this project!*
 - [Alex Lionne](https://github.com/AlexLionne)
 
-##License
+## License
     Copyright 2015 Patrick J
 
     Licensed under the Apache License, Version 2.0 (the "License");
